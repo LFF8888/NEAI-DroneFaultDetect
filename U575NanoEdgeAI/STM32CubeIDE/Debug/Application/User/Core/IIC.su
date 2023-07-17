@@ -1,0 +1,9 @@
+../Application/User/Core/IIC.c:14:6:IIC_SDA	16	static
+../Application/User/Core/IIC.c:19:6:IIC_SCL	16	static
+../Application/User/Core/IIC.c:24:9:IIC_R_SDA	16	static
+../Application/User/Core/IIC.c:31:6:IIC_Start	8	static
+../Application/User/Core/IIC.c:39:6:IIC_Stop	8	static
+../Application/User/Core/IIC.c:47:6:IIC_WriteByte	24	static
+../Application/User/Core/IIC.c:59:9:IIC_ReadByte	16	static
+../Application/User/Core/IIC.c:76:6:IIC_SendACK	16	static
+../Application/User/Core/IIC.c:83:9:IIC_ReadACK	16	static
