@@ -1,0 +1,68 @@
+{
+    "commit": "a253ee7a",
+    "compilation_date": "2023-07-10T12:45:49.264133",
+    "compilation_flags": {
+        "float_abi": "soft",
+        "fshort_enums": false,
+        "short_wchar": false
+    },
+    "compilation_str": "{'compilation_dict':{'api':{'env':'PROD','version':'v3'},'version':{'web_api':{'env':'PROD','version':'v3'},'local_api':{'version':'2023.06.31.1','platform':'win64'},'studio':'3.4.0'},'combination':[0,[2,3,17,4,12,10,6,9,19,16,21,0,18,24,23,22,8,26,25,14,13,15,20,11,7,1,5],27,0,100,50,5,0,1,2,6,0.79,0.0,0.0,1000000.0,2.19,0,0,0,0,0.02,0.09],'compilation_type':'on_board_training','compilation_flags':{'float_abi':'soft','short_wchar':false,'fshort_enums':false,'use_knowledge':false},'mcu':'cortex-m0+_st_stm32g0_nucleo-g071rb','sensor':'multiGeneric','data':{'nb_cols':300,'nb_lines':[[20,21]]},'only_emulators':false,'lock_type':100,'learning_min_lines':10,'lib_version':'v2_a253ee7','class_names':'nominal,anomaly','performance':{'performance':{'score':0.999472,'precision':1.0,'precision_confidence_interval':[0.9539,1.0]},'memory_usage':{'estimated_ram':844,'estimated_flash':2813,'estimated_flash_knowledge':492}}},'sign':31852,'license_key':'***'}",
+    "compilation_type": "on_board_training",
+    "compile_emulators": true,
+    "compile_library": true,
+    "data": {
+        "nb_cols": 300,
+        "nb_lines": [
+            [
+                20,
+                21
+            ]
+        ]
+    },
+    "gcc_version": "arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]",
+    "learning_min_lines": 10,
+    "lib_limited": true,
+    "library_id": "64abfd7ef74f9f11b61fcba1",
+    "library_md5sum": "2f0b928a6ddd212801e39e255400739e",
+    "mcu": "cortex-m0+_st_stm32g0_nucleo-g071rb",
+    "mcu_cpn": "NUCLEO-G071RB",
+    "mcu_family": "STM32G0",
+    "mcu_type": "cortex-m0plus",
+    "memory_usage": {
+        "flash": 2629,
+        "ram": 848
+    },
+    "performance": {
+        "memory_usage": {
+            "estimated_flash": 2813,
+            "estimated_flash_knowledge": 492,
+            "estimated_ram": 844
+        },
+        "performance": {
+            "precision": 1.0,
+            "precision_confidence_interval": [
+                0.9539,
+                1.0
+            ],
+            "score": 0.999472
+        }
+    },
+    "sensor": "multiGeneric",
+    "studio_info": {
+        "local_api": {
+            "platform": "win64",
+            "version": "2023.06.31.1"
+        },
+        "studio": "3.4.0",
+        "web_api": {
+            "env": "PROD",
+            "version": "v3"
+        }
+    },
+    "user_info": {
+        "company": "Henu University",
+        "email": "1056606978@qq.com",
+        "first_name": "\u6587\u7855",
+        "last_name": "\u5f20"
+    }
+}
