@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.21.4">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_N5NU" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">降低自动锁屏时间</Translation>
+      </Text>
+      <Text Id="__SingleUse_FIE2" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">降低屏幕刷新率</Translation>
+      </Text>
+      <Text Id="__SingleUse_BIWI" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">自动开启省电模式</Translation>
+      </Text>
+      <Text Id="__SingleUse_RMCD" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">差</Translation>
+      </Text>
+      <Text Id="__SingleUse_SA5T" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">定位精度</Translation>
+      </Text>
+      <Text Id="__SingleUse_SGV7" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">请移至开阔地带！</Translation>
+      </Text>
+      <Text Id="__SingleUse_ISLY" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_122U" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">卫星数量</Translation>
+      </Text>
+      <Text Id="__SingleUse_13ZG" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">良好</Translation>
+      </Text>
+      <Text Id="__SingleUse_A92B" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">蓝牙信号</Translation>
+      </Text>
+      <Text Id="__SingleUse_FOPR" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">良好</Translation>
+      </Text>
+      <Text Id="__SingleUse_VR7X" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">优</Translation>
+      </Text>
+      <Text Id="__SingleUse_7AEL" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">信号</Translation>
+      </Text>
+      <Text Id="__SingleUse_CZ2W" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">4G</Translation>
+      </Text>
+      <Text Id="__SingleUse_C4JO" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">遥控信号</Translation>
+      </Text>
+      <Text Id="__SingleUse_BQXA" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O6Q1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">地图选点</Translation>
+      </Text>
+      <Text Id="__SingleUse_0UZ7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">电池健康</Translation>
+      </Text>
+      <Text Id="__SingleUse_TD4O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">卫星定位</Translation>
+      </Text>
+      <Text Id="__SingleUse_3TST" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">遥控信号</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="SIMYOU.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Typography_01" Font="SIMYOU.TTF" Size="40" Bpp="8" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

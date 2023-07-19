@@ -1,0 +1,806 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Start",
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "start",
+            "Width": 800,
+            "Height": 479,
+            "Pressed": "start.png",
+            "Released": "start.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 2000
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "main",
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "WIFI_BUT",
+            "X": 26,
+            "Y": 49,
+            "Width": 169,
+            "Height": 110,
+            "Pressed": "a3.png",
+            "Released": "a3.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "SAT_BUT",
+            "X": 188,
+            "Y": 98,
+            "Width": 199,
+            "Height": 137,
+            "Pressed": "a1.png",
+            "Released": "a1.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "BAT_BUT",
+            "X": 419,
+            "Y": 55,
+            "Width": 115,
+            "Height": 105,
+            "Pressed": "a5.png",
+            "Released": "a5.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "MAP_BUT",
+            "X": 470,
+            "Y": 146,
+            "Width": 318,
+            "Height": 301,
+            "Pressed": "a2.png",
+            "Released": "a2.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "CTRL_BUT",
+            "X": 9,
+            "Y": 308,
+            "Width": 410,
+            "Height": 149,
+            "Pressed": "a4.png",
+            "Released": "a4.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 62,
+            "Y": 187,
+            "Width": 96,
+            "Height": 36,
+            "RelativeFilename": "a6.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1_1",
+            "X": 239,
+            "Y": 50,
+            "Width": 96,
+            "Height": 36,
+            "RelativeFilename": "a6.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1_2",
+            "X": 428,
+            "Y": 187,
+            "Width": 96,
+            "Height": 36,
+            "RelativeFilename": "a6.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1_3",
+            "X": 679,
+            "Y": 421,
+            "Width": 96,
+            "Height": 36,
+            "RelativeFilename": "a6.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 70,
+            "Y": 191,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_3TST",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 247,
+            "Y": 54,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_TD4O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 436,
+            "Y": 191,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_0UZ7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1_1",
+            "X": 687,
+            "Y": 425,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_O6Q1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock1",
+            "X": 687,
+            "Width": 113,
+            "Height": 30,
+            "TextColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextId": "__SingleUse_BQXA",
+            "DisplayLeadingZeroForHourIndicator": true,
+            "UseAmPm": true,
+            "InitialHour": 23,
+            "InitialMinute": 14
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "WIFI_BUT"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "WiFi"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SAT_BUT"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Satelite"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BAT_BUT"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Battery"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "MAP_BUT"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Map"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "CTRL_BUT"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Control"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "WiFi",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 109,
+            "Y": 153,
+            "Width": 160,
+            "Height": 45,
+            "TextId": "__SingleUse_C4JO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 310,
+            "Y": 153,
+            "Width": 80,
+            "Height": 45,
+            "TextId": "__SingleUse_FOPR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 77,
+              "Green": 201,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2_1",
+            "X": 310,
+            "Y": 330,
+            "Width": 80,
+            "Height": 45,
+            "TextId": "__SingleUse_13ZG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 77,
+              "Green": 201,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_3",
+            "X": 109,
+            "Y": 330,
+            "Width": 160,
+            "Height": 45,
+            "TextId": "__SingleUse_A92B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 109,
+            "Y": 237,
+            "Width": 57,
+            "Height": 49,
+            "TextId": "__SingleUse_CZ2W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 189,
+            "Y": 239,
+            "Width": 80,
+            "Height": 45,
+            "TextId": "__SingleUse_7AEL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1_1",
+            "X": 310,
+            "Y": 239,
+            "Width": 40,
+            "Height": 45,
+            "TextId": "__SingleUse_VR7X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 77,
+              "Green": 201,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1_1",
+            "X": 527,
+            "Y": 297,
+            "Width": 169,
+            "Height": 110,
+            "Filename": "a3.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Button",
+            "Name": "WiFi_Return",
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "a7.png",
+            "Released": "a7.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "WiFi_Return"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Battery",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 109,
+            "Y": 242,
+            "Width": 320,
+            "Height": 45,
+            "TextId": "__SingleUse_N5NU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_3",
+            "X": 109,
+            "Y": 330,
+            "Width": 280,
+            "Height": 45,
+            "TextId": "__SingleUse_FIE2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 109,
+            "Y": 153,
+            "Width": 320,
+            "Height": 45,
+            "TextId": "__SingleUse_BIWI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1_2",
+            "X": 650,
+            "Y": 343,
+            "Width": 115,
+            "Height": 105,
+            "Filename": "a5.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Button",
+            "Name": "Return",
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "a7.png",
+            "Released": "a7.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 475,
+            "Y": 150,
+            "Width": 138,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_off_normal.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_on_active.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1_1_1_1",
+            "X": 475,
+            "Y": 239,
+            "Width": 138,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_on_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_off_normal.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1_1_1_1_1",
+            "X": 475,
+            "Y": 327,
+            "Width": 138,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_off_normal.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_medium_round_text_on_active.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Return"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Satelite",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1_1",
+            "X": 310,
+            "Y": 239,
+            "Width": 40,
+            "Height": 45,
+            "TextId": "__SingleUse_RMCD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 109,
+            "Y": 239,
+            "Width": 160,
+            "Height": 45,
+            "TextId": "__SingleUse_SA5T",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_3",
+            "X": 109,
+            "Y": 330,
+            "Width": 320,
+            "Height": 45,
+            "TextId": "__SingleUse_SGV7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 166
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 310,
+            "Y": 153,
+            "Width": 26,
+            "Height": 49,
+            "TextId": "__SingleUse_ISLY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 77,
+              "Green": 201,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 109,
+            "Y": 153,
+            "Width": 160,
+            "Height": 45,
+            "TextId": "__SingleUse_122U",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "X": 601,
+            "Y": 134,
+            "Width": 199,
+            "Height": 137,
+            "Filename": "a1.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage2_1",
+            "X": 436,
+            "Y": 284,
+            "Width": 308,
+            "Height": 112,
+            "Filename": "a4.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Button",
+            "Name": "Return",
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "a7.png",
+            "Released": "a7.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Return"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Control",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "control.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "Return",
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "a7.png",
+            "Released": "a7.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Return"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Map",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "map.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "Return",
+            "Y": 6,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "a7.png",
+            "Released": "a7.png",
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Return"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "main"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "F769I",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Start",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32F769I_DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector"
+    ]
+  },
+  "Version": "4.21.4",
+  "CreatedBy": "4.21.4"
+}
