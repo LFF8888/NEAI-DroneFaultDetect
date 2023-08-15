@@ -10,7 +10,7 @@
 
 ###### 例：U575NanoEdgeAI
 
-可将本文件夹直接放置在STM32CubeIDE的workspace中，双击`U575NanoEdgeAI\STM32CubeIDE\.project`即可打开工程。
+可将本文件夹直接放置在STM32CubeIDE的workspace中，双击`H563.NanoEdgeAI\STM32CubeIDE\.project`即可打开工程。
 
 ## 关于硬件设计的使用：
 
