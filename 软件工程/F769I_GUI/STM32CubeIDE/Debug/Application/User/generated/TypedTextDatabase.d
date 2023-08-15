@@ -1,5 +1,5 @@
 Application/User/generated/TypedTextDatabase.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \

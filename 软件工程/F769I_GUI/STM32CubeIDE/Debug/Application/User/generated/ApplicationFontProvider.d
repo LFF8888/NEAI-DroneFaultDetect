@@ -1,5 +1,5 @@
 Application/User/generated/ApplicationFontProvider.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/ApplicationFontProvider.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

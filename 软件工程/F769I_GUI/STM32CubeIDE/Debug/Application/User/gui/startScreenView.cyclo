@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/startscreen_screen/startScreenView.cpp:13:6:virtual void startScreenView::tearDownScreen()	1
+../../TouchGFX/gui/include/gui/startscreen_screen/startScreenView.hpp:11:13:startScreenView::~startScreenView()	1
+../../TouchGFX/gui/include/gui/startscreen_screen/startScreenView.hpp:11:13:virtual startScreenView::~startScreenView()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/startscreen_screen/startScreenView.cpp:3:1:startScreenView::startScreenView()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/startscreen_screen/startScreenView.cpp:8:6:virtual void startScreenView::setupScreen()	1

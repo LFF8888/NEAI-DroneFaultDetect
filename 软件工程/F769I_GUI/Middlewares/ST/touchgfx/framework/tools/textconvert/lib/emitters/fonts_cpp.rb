@@ -1,7 +1,7 @@
 # Copyright (c) 2018(-2023) STMicroelectronics.
 # All rights reserved.
 #
-# This file is part of the TouchGFX 4.21.4 distribution.
+# This file is part of the TouchGFX 4.22.0 distribution.
 #
 # This software is licensed under terms that can be found in the LICENSE file in
 # the root directory of this software component.
@@ -13,7 +13,7 @@ class FontsCpp
     @@font_convert = font_convert
   end
 
-  def initialize(text_entries, typographies, languages, output_directory, font_asset_path, autohint_setting, data_format, generate_binary_fonts, generate_font_format)
+  def initialize(text_entries, typographies, languages, output_directory, font_asset_path, autohint_setting, data_format, generate_binary_fonts, generate_font_format, korean_fusion_fonts)
     @typographies = typographies
     @languages = languages
     @output_directory = output_directory
@@ -22,6 +22,7 @@ class FontsCpp
     @data_format = data_format
     @generate_binary_fonts = generate_binary_fonts
     @generate_font_format = generate_font_format
+    @korean_fusion_fonts = korean_fusion_fonts
   end
   def run
     unique_typographies = @typographies.map{ |t| Typography.new("", t.font_file, t.font_size, t.bpp, t.fallback_character, t.ellipsis_character) }.uniq
@@ -77,6 +78,21 @@ class FontsCpp
       #generate contextual forms table for font if not already done
       generate_contextual_table = context_tables_is_generated[typography.cpp_name] ? "no" : "yes"
       context_tables_is_generated[typography.cpp_name] = true #set done for next font with this name
+      fontname = "#{typography.cpp_name}_#{typography.font_size}_#{typography.bpp}bpp"
+      fusion = "0"
+      @korean_fusion_fonts.each do |fontmap|
+        if fontmap.keys.any?(fontname)
+          width = fontmap[fontname]["width"]
+          height = fontmap[fontname]["height"]
+          baseline = fontmap[fontname]["baseline"]
+          advance = fontmap[fontname]["advance"]
+          fail "ERROR: \"width\" is unspecified for fused font #{fontname}" if width.nil?
+          fail "ERROR: \"height\" is unspecified for fused font #{fontname}" if height.nil?
+          fail "ERROR: \"baseline\" is unspecified for fused font #{fontname}" if baseline.nil?
+          fail "ERROR: \"advance\" is unspecified for fused font #{fontname}" if advance.nil?
+          fusion = "1 #{width} #{height} #{baseline} #{advance}"
+        end
+      end
       cmd = "\"#{@@font_convert}\" \
 -f \"#{font_file}\" \
 -i #{font_index} \
@@ -91,6 +107,7 @@ class FontsCpp
 -ct #{generate_contextual_table} \
 -bf #{@generate_binary_fonts} \
 -ff #{@generate_font_format} \
+-ffu #{fusion} \
 #{autohint} \
 #{byte_align}"
       output = `#{cmd}`.force_encoding('iso-8859-1')
@@ -100,7 +117,7 @@ class FontsCpp
         fail "ERROR: While generating font from #{font_file}"
       else
         puts "Command: #{cmd}" if ENV['DEBUG']
-        puts output
+        puts output if output.length > 0
       end
     end
   end

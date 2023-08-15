@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -91,7 +91,7 @@ void PainterRGB888LinearGradient::paint(uint8_t* destination, int16_t offset, in
     if (x <= vx0)
     {
         // Starting before gradient
-        int pixels = (int)(MIN(vx0 + 1 - x, count));
+        const int pixels = (int)(MIN(vx0 + 1 - x, count));
         // Start in correct end of palette depending on direction
         const uint32_t colorStart = texture[deltaColor > 0 ? 0 : 1023];
         uint8_t* const p_end = p + pixels * 3;

@@ -1,9 +1,0 @@
-../Application/User/Core/IIC.c:14:6:IIC_SDA	1
-../Application/User/Core/IIC.c:19:6:IIC_SCL	1
-../Application/User/Core/IIC.c:24:9:IIC_R_SDA	1
-../Application/User/Core/IIC.c:31:6:IIC_Start	1
-../Application/User/Core/IIC.c:39:6:IIC_Stop	1
-../Application/User/Core/IIC.c:47:6:IIC_WriteByte	2
-../Application/User/Core/IIC.c:59:9:IIC_ReadByte	3
-../Application/User/Core/IIC.c:76:6:IIC_SendACK	1
-../Application/User/Core/IIC.c:83:9:IIC_ReadACK	1

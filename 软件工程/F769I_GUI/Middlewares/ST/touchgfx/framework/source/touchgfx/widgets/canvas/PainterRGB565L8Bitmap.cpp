@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -107,7 +107,7 @@ bool PainterRGB565L8Bitmap::setup(const Rect& widgetRect) const
     updateBitmapOffsets(widgetWidth);
     if (bitmap.getId() != BITMAP_INVALID)
     {
-        paint::setL8Pallette(bitmapCLUT);
+        paint::setL8Palette(bitmapCLUT);
         return true;
     }
     return false;

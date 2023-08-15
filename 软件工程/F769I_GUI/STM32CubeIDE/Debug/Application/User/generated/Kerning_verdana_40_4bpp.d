@@ -1,5 +1,5 @@
 Application/User/generated/Kerning_verdana_40_4bpp.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \

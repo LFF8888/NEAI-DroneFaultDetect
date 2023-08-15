@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/port.o: \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

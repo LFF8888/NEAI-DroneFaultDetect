@@ -1,5 +1,5 @@
 Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_cortex.o: \
- D:/PersonalData/STM32Prj/F769I/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../../Core/Inc/stm32f7xx_hal_conf.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -37,6 +37,8 @@ Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_cortex.o: \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
+ ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
+ ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_jpeg.h
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
@@ -76,5 +78,7 @@ Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_cortex.o: \
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
+../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
+../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_jpeg.h:

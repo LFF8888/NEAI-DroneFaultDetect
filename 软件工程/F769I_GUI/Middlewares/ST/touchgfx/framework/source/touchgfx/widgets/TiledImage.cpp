@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -74,8 +74,8 @@ int16_t TiledImage::getYOffset()
 
 void TiledImage::draw(const Rect& invalidatedArea) const
 {
-    int16_t bitmapWidth = bitmap.getWidth();
-    int16_t bitmapHeight = bitmap.getHeight();
+    const int16_t bitmapWidth = bitmap.getWidth();
+    const int16_t bitmapHeight = bitmap.getHeight();
 
     if (bitmapWidth == 0 || bitmapHeight == 0)
     {
@@ -120,7 +120,7 @@ Rect TiledImage::getSolidRect() const
         solidRect2.x += bitmap.getWidth();
         if (solidRect.x < 0)
         {
-            int16_t right = solidRect.right();
+            const int16_t right = solidRect.right();
             solidRect.width = MAX(right, 0);
             solidRect.x = 0;
         }
@@ -144,7 +144,7 @@ Rect TiledImage::getSolidRect() const
         solidRect2.y += bitmap.getHeight();
         if (solidRect.y < 0)
         {
-            int16_t bottom = solidRect.bottom();
+            const int16_t bottom = solidRect.bottom();
             solidRect.height = MAX(bottom, 0);
             solidRect.y = 0;
         }

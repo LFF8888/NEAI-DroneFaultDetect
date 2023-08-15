@@ -1,0 +1,2 @@
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/images/src/BitmapDatabase.cpp:195:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/images/src/BitmapDatabase.cpp:200:10:uint16_t BitmapDatabase::getInstanceSize()	1

@@ -1,0 +1,240 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen2",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Slider",
+            "Name": "slider1",
+            "X": 246,
+            "Y": 389,
+            "Width": 308,
+            "Height": 50,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_button_regular_height_36_large_round_disabled.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_button_regular_height_36_large_round_active.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_radiobutton_check_large_rounded_on_active.png",
+            "BackgroundX": 11,
+            "BackgroundY": 7,
+            "IndicatorMax": 258,
+            "ValueMax": 100
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge1",
+            "X": 232,
+            "Y": 27,
+            "Width": 336,
+            "Height": 336,
+            "Preset": "alternate_theme\\presets\\gauges\\large\\dark_filled.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_large_backgrounds_dark_filled.png",
+            "RotationCenterX": 168.0,
+            "RotationCenterY": 168.0,
+            "StartAngle": -117.0,
+            "EndAngle": 121.0,
+            "RangeMax": 100.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_large_needles_rough.png",
+            "NeedleRotationCenterX": 15.0,
+            "NeedleRotationCenterY": 96.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": true,
+            "FileNameArc": "__generated\\alternate_theme_images_widgets_gauge_large_fillers_swoop.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 33.0,
+            "ArcY": 33.0,
+            "ArcWidth": 270.0,
+            "ArcHeight": 198.0,
+            "ArcRadius": 137.0,
+            "ArcLineWidth": 136.0,
+            "ArcCapStyle": "Butt"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "slider1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 244,
+            "Y": 177,
+            "Width": 312,
+            "Height": 60,
+            "RelativeFilename": "__generated\\alternate_theme_images_widgets_button_regular_height_60_medium_round_action.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonAdd",
+            "X": 461,
+            "Y": 331,
+            "Width": 228,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_small_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_small_round_active.png",
+            "TextId": "__SingleUse_SJ5F",
+            "ReleasedColor": {
+              "Red": 54,
+              "Green": 54,
+              "Blue": 54
+            },
+            "PressedColor": {
+              "Red": 54,
+              "Green": 54,
+              "Blue": 54
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonSub",
+            "X": 112,
+            "Y": 331,
+            "Width": 228,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_small_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_small_round_active.png",
+            "TextId": "__SingleUse_01TE",
+            "ReleasedColor": {
+              "Red": 54,
+              "Green": 54,
+              "Blue": 54
+            },
+            "PressedColor": {
+              "Red": 54,
+              "Green": 54,
+              "Blue": 54
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textNumber",
+            "X": 285,
+            "Y": 168,
+            "Width": 258,
+            "Height": 73,
+            "TextId": "__SingleUse_MFNR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 54,
+              "Green": 54,
+              "Blue": 54
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_KT43",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionAdd",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonAdd"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionAdd"
+            }
+          },
+          {
+            "InteractionName": "InteractionSub",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonSub"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionSub"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "F769I",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen2",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32F769I_DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector"
+    ]
+  },
+  "Version": "4.21.4",
+  "CreatedBy": "4.21.4"
+}

@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/croutine.o: \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

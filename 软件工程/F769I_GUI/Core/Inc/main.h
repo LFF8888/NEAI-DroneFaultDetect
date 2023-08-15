@@ -55,7 +55,10 @@ void Error_Handler(void);
 void MX_I2C4_Init(void);
 
 /* USER CODE BEGIN EFP */
-
+typedef struct{
+	int size;
+	char Data[21];
+}uartData_t;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -67,6 +70,8 @@ void MX_I2C4_Init(void);
 #define VSYNC_FREQ_GPIO_Port GPIOC
 #define MCU_ACTIVE_Pin GPIO_PIN_6
 #define MCU_ACTIVE_GPIO_Port GPIOF
+#define USER_BUT_Pin GPIO_PIN_0
+#define USER_BUT_GPIO_Port GPIOA
 #define FRAME_RATE_Pin GPIO_PIN_1
 #define FRAME_RATE_GPIO_Port GPIOJ
 

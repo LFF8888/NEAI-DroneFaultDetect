@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -99,7 +99,7 @@ void AnalogClock::initializeTime24Hour(uint8_t hour, uint8_t minute, uint8_t sec
     lastSecond = 255;
 
     // Disable animation and set time
-    uint16_t tempAnimationDuration = animationDuration;
+    const uint16_t tempAnimationDuration = animationDuration;
     animationDuration = 1;
     setTime24Hour(hour, minute, second);
 

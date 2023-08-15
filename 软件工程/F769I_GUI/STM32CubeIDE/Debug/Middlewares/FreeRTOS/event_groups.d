@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/event_groups.o: \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

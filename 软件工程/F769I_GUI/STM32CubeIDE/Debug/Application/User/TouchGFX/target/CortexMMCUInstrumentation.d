@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/CortexMMCUInstrumentation.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/target/CortexMMCUInstrumentation.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/target/CortexMMCUInstrumentation.cpp \
  ../../TouchGFX/target/CortexMMCUInstrumentation.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \

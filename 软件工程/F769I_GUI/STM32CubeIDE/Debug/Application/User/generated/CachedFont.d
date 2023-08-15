@@ -1,5 +1,5 @@
 Application/User/generated/CachedFont.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/fonts/src/CachedFont.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/fonts/src/CachedFont.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/CachedFont.hpp \
  ../../TouchGFX/generated/fonts/include/fonts/FontCache.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

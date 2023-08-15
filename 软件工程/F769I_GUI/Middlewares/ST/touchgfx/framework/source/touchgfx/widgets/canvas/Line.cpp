@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -167,7 +167,7 @@ void Line::updateCachedShape()
         // We want to hit as close to the limit inside 32bits.
         // sqrt(0x7FFFFFFF / 2) = 46340, which is roughly toQ5(1448)
         static const int32_t MAXVAL = 46340;
-        int32_t common_divisor = gcd(abs((int32_t)dxQ5), abs((int32_t)dyQ5));
+        const int32_t common_divisor = gcd(abs((int32_t)dxQ5), abs((int32_t)dyQ5));
         // First try to scale down
         if (common_divisor != 1)
         {
@@ -303,10 +303,10 @@ void Line::invalidateContent() const
         return;
     }
 
-    int16_t center_x = ((startXQ5 + endXQ5) / 2).to<int16_t>();
-    int16_t center_y = ((startYQ5 + endYQ5) / 2).to<int16_t>();
+    const int16_t center_x = ((startXQ5 + endXQ5) / 2).to<int16_t>();
+    const int16_t center_y = ((startYQ5 + endYQ5) / 2).to<int16_t>();
     // The following should be "lineWidth/sqrt(2)" but to speed up we take the slightly larger "lineWidth/1.3333"="(lineWidth*3)/4"
-    int16_t extra_width = ((CWRUtil::Q5)(((int)(lineWidthQ5)*3 + 3) >> 2)).ceil();
+    const int16_t extra_width = ((CWRUtil::Q5)(((int)(lineWidthQ5)*3 + 3) >> 2)).ceil();
 #define same_sign(x, y) (((x) < 0 && (y) < 0) || ((x) > 0 && (y) > 0))
     if (smallRect.width < smallRect.height)
     {

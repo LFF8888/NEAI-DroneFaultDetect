@@ -13,21 +13,27 @@ class FlashDataReader;
 
 struct Typography
 {
-    static const touchgfx::FontId DEFAULT = 0;
-    static const touchgfx::FontId LARGE = 1;
-    static const touchgfx::FontId SMALL = 2;
-    static const touchgfx::FontId TYPOGRAPHY_00 = 3;
-    static const touchgfx::FontId TYPOGRAPHY_01 = 4;
+    static const touchgfx::FontId SY16 = 0;
+    static const touchgfx::FontId SY18 = 1;
+    static const touchgfx::FontId SY20 = 2;
+    static const touchgfx::FontId SY24 = 3;
+    static const touchgfx::FontId SY28 = 4;
+    static const touchgfx::FontId SY32 = 5;
+    static const touchgfx::FontId SY36 = 6;
+    static const touchgfx::FontId SY40 = 7;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0;       // SIMYOU_TTF_20_4bpp
-    static const touchgfx::FontId LARGE = 1;         // verdana_40_4bpp
-    static const touchgfx::FontId SMALL = 2;         // verdana_10_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_00 = 3; // verdana_20_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_01 = 4; // SIMYOU_TTF_40_8bpp
-    static const uint16_t NUMBER_OF_FONTS = 5;
+    static const touchgfx::FontId SY16 = 0; // SourceHanSansSC_Bold_16_2bpp
+    static const touchgfx::FontId SY18 = 1; // SourceHanSansSC_Bold_18_2bpp
+    static const touchgfx::FontId SY20 = 2; // SourceHanSansSC_Bold_20_2bpp
+    static const touchgfx::FontId SY24 = 3; // SourceHanSansSC_Bold_24_2bpp
+    static const touchgfx::FontId SY28 = 4; // SourceHanSansSC_Bold_28_2bpp
+    static const touchgfx::FontId SY32 = 5; // SourceHanSansSC_Bold_32_2bpp
+    static const touchgfx::FontId SY36 = 6; // SourceHanSansSC_Bold_36_2bpp
+    static const touchgfx::FontId SY40 = 7; // SourceHanSansSC_Bold_40_2bpp
+    static const uint16_t NUMBER_OF_FONTS = 8;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

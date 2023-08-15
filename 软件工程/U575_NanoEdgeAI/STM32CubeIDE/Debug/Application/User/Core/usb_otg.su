@@ -1,3 +1,0 @@
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usb_otg.c:31:6:MX_USB_OTG_FS_PCD_Init	8	static
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usb_otg.c:60:6:HAL_PCD_MspInit	256	static
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usb_otg.c:116:6:HAL_PCD_MspDeInit	16	static

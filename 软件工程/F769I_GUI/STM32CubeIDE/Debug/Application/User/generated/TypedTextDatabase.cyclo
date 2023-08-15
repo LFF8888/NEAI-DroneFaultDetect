@@ -1,0 +1,6 @@
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:79:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:84:10:uint16_t TypedTextDatabase::getInstanceSize()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:89:24:const touchgfx::Font** TypedTextDatabase::getFonts()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:94:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:101:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	9
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:131:1:cpp)	1

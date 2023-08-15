@@ -200,6 +200,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c</locationURI>
 		</link>
 		<link>
+			<name>Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_uart.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_uart_ex.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c</locationURI>
+		</link>
+		<link>
 			<name>Drivers/STM32F7xx_HAL_Driver/stm32f7xx_ll_fmc.c</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.c</locationURI>
@@ -565,14 +575,24 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/target/generated/tgfx_jpeg_utils.c</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/BatteryPresenter.cpp</name>
+			<name>Application/User/gui/aboutScreenPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battery_screen/BatteryPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/aboutscreen_screen/aboutScreenPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/BatteryView.cpp</name>
+			<name>Application/User/gui/aboutScreenView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/battery_screen/BatteryView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/aboutscreen_screen/aboutScreenView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/batScreenPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/batscreen_screen/batScreenPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/batScreenView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/batscreen_screen/batScreenView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
@@ -580,34 +600,39 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/ControlPresenter.cpp</name>
+			<name>Application/User/gui/errorContainer.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/control_screen/ControlPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/containers/errorContainer.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/ControlView.cpp</name>
+			<name>Application/User/gui/firstScreeenPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/control_screen/ControlView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/firstscreeen_screen/firstScreeenPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/mainPresenter.cpp</name>
+			<name>Application/User/gui/firstScreeenView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/main_screen/mainPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/firstscreeen_screen/firstScreeenView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/mainView.cpp</name>
+			<name>Application/User/gui/lockScreenPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/main_screen/mainView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/lockscreen_screen/lockScreenPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MapPresenter.cpp</name>
+			<name>Application/User/gui/lockScreenView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/map_screen/MapPresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/lockscreen_screen/lockScreenView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MapView.cpp</name>
+			<name>Application/User/gui/mainScreenPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/map_screen/MapView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainscreen_screen/mainScreenPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/mainScreenView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/mainscreen_screen/mainScreenView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Model.cpp</name>
@@ -615,34 +640,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/SatelitePresenter.cpp</name>
+			<name>Application/User/gui/startScreenPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/satelite_screen/SatelitePresenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/startscreen_screen/startScreenPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/SateliteView.cpp</name>
+			<name>Application/User/gui/startScreenView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/satelite_screen/SateliteView.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/StartPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/start_screen/StartPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/StartView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/start_screen/StartView.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/WiFiPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/wifi_screen/WiFiPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/WiFiView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/wifi_screen/WiFiView.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/startscreen_screen/startScreenView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
@@ -660,119 +665,309 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/FontCache.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_10.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_10.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_10.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_10.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_11.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_11.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_11.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_11.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_12.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_13.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_12.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_13.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_13.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_14.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_13.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_14.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_14.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_18.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_14.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_18.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_18.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_16_2bpp_4.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_18.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_16_2bpp_4.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_20_4bpp_9.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_20_4bpp_9.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_0.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_10.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_10.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_10.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_11.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_10.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_11.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_11.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_12.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_11.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_12.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_12.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_13.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_12.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_13.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_13.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_15.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_13.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_15.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_14.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_17.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_14.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_17.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_15.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_18_2bpp_9.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_15.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_18_2bpp_9.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_16.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_16.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_17.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_10.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_17.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_10.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_18.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_11.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_18.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_11.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_31.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_12.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_31.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_12.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_SIMYOU_TTF_40_8bpp_9.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_13.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SIMYOU_TTF_40_8bpp_9.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_13.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_verdana_10_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_14.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_14.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_verdana_20_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_19.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_19.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_verdana_40_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_20_2bpp_9.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_20_2bpp_9.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_11.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_12.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_12.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_13.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_13.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_14.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_14.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_15.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_15.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_16.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_16.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_17.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_17.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_18.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_18.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_19.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_19.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_31.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_31.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_6.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_6.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_24_2bpp_9.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_24_2bpp_9.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_11.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_18.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_18.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_19.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_19.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_28_2bpp_9.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_28_2bpp_9.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_11.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_12.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_12.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_13.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_13.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_14.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_14.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_15.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_15.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_16.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_16.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_18.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_18.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_31.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_31.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_32_2bpp_9.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_32_2bpp_9.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_36_2bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_36_2bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_11.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_13.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_13.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_14.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_14.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Font_SourceHanSansSC_Bold_40_2bpp_9.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_SourceHanSansSC_Bold_40_2bpp_9.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/GeneratedFont.cpp</name>
@@ -780,54 +975,84 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/GeneratedFont.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_SIMYOU_TTF_20_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_16_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SIMYOU_TTF_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_16_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_SIMYOU_TTF_40_8bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_18_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SIMYOU_TTF_40_8bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_18_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_verdana_10_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_20_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_20_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_verdana_20_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_24_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_24_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_verdana_40_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_28_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_28_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_SIMYOU_TTF_20_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_32_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SIMYOU_TTF_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_32_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_SIMYOU_TTF_40_8bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_36_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SIMYOU_TTF_40_8bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_36_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_verdana_10_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_SourceHanSansSC_Bold_40_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_SourceHanSansSC_Bold_40_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_verdana_20_4bpp.cpp</name>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_16_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_16_2bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_verdana_40_4bpp.cpp</name>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_18_2bpp.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_18_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_20_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_20_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_24_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_24_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_28_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_28_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_32_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_32_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_36_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_36_2bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_SourceHanSansSC_Bold_40_2bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_SourceHanSansSC_Bold_40_2bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/UnmappedDataFont.cpp</name>
@@ -835,9 +1060,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/BatteryViewBase.cpp</name>
+			<name>Application/User/generated/aboutScreenViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/battery_screen/BatteryViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/aboutscreen_screen/aboutScreenViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/batScreenViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
@@ -845,34 +1075,29 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/ControlViewBase.cpp</name>
+			<name>Application/User/generated/errorContainerBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/control_screen/ControlViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/containers/errorContainerBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/mainViewBase.cpp</name>
+			<name>Application/User/generated/firstScreeenViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/main_screen/mainViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/firstscreeen_screen/firstScreeenViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/MapViewBase.cpp</name>
+			<name>Application/User/generated/lockScreenViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/map_screen/MapViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/lockscreen_screen/lockScreenViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/SateliteViewBase.cpp</name>
+			<name>Application/User/generated/mainScreenViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/satelite_screen/SateliteViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/StartViewBase.cpp</name>
+			<name>Application/User/generated/startScreenViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/start_screen/StartViewBase.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/WiFiViewBase.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/wifi_screen/WiFiViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/startscreen_screen/startScreenViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>
@@ -885,69 +1110,314 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/SVGDatabase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_off_normal.cpp</name>
+			<name>Application/User/generated/image_alternate_theme_images_backgrounds_480x272_gradient_dark.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_off_normal.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_backgrounds_480x272_gradient_dark.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_on_action.cpp</name>
+			<name>Application/User/generated/image_alternate_theme_images_widgets_gauge_small_backgrounds_active.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_on_action.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_small_backgrounds_active.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_on_active.cpp</name>
+			<name>Application/User/generated/image_alternate_theme_images_widgets_gauge_small_needles_rough.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_togglebutton_medium_round_text_on_active.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_small_needles_rough.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_light_theme_images_widgets_gauge_tiny_backgrounds_active_precision.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_light_theme_images_widgets_gauge_tiny_backgrounds_active_precision.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_light_theme_images_widgets_gauge_tiny_fillers_swoop.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_light_theme_images_widgets_gauge_tiny_fillers_swoop.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_light_theme_images_widgets_gauge_tiny_needles_rough.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_light_theme_images_widgets_gauge_tiny_needles_rough.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_about.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/about/image_about.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_fly.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/about/image_fly.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_sliderBar.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/about/image_sliderBar.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_arrow1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_arrow1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_arrow2.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_arrow2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_arrow3.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_arrow3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery01.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery01.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery02.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery02.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery03.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery03.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery04.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery04.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery05.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery05.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery06.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery06.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery07.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery07.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery08.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery08.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery09.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery09.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery11.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery12.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery12.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery13.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery13.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery14.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery14.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery15.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery15.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery16.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery16.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery17.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery17.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery18.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery18.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery19.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery19.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery20.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery20.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_battery21.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_battery21.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_wait1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_wait1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_wait2.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_wait2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_wait3.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/animate/image_wait3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_bat.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/bat/image_bat.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_a1.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a1.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_a1.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_a2.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a2.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_a3.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a3.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_a2.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_a4.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a4.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_a4.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_a5.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a5.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_a5.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_a6.cpp</name>
+			<name>Application/User/generated/image_b1.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a6.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_b1.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_a7.cpp</name>
+			<name>Application/User/generated/image_b2.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_a7.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_b2.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_control.cpp</name>
+			<name>Application/User/generated/image_b5.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_control.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_b5.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_map.cpp</name>
+			<name>Application/User/generated/image_blue1.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_map.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_blue1.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_start.cpp</name>
+			<name>Application/User/generated/image_blue2.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_start.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_blue2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_c1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_c1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_red1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_red1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_red2.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_red2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_return1.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_return1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_return2.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/but/image_return2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ST_LOGO.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ST_LOGO.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_plane.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_plane.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_relock.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_relock.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_rssi.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_rssi.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_state.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_state.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_tchGFX_LOGO.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_tchGFX_LOGO.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_glass.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/lock/image_glass.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_glassless.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/lock/image_glassless.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_lock.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/lock/image_lock.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_unlockNote.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/lock/image_unlockNote.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_monitor.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/start/image_monitor.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>

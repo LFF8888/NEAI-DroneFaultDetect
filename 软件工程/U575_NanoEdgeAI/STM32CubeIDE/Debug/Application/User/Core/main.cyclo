@@ -1,5 +1,0 @@
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/main.c:82:5:main	3
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/main.c:174:6:SystemClock_Config	4
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/main.c:230:13:SystemPower_Config	2
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/main.c:246:6:fill_accelerometer_buffer	2
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/main.c:285:6:Error_Handler	1

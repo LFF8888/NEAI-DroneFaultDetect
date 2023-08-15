@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -19,7 +19,7 @@ void PainterARGB8888::paint(uint8_t* destination, int16_t offset, int16_t /*widg
 {
     uint32_t* RESTRICT framebuffer = reinterpret_cast<uint32_t*>(destination) + offset;
     const uint32_t* const lineEnd = framebuffer + count;
-    uint32_t color = (painterColor & 0x00FFFFFF) | (alpha << 24);
+    const uint32_t color = (painterColor & 0x00FFFFFF) | (alpha << 24);
 
     if (alpha == 0xFF)
     {

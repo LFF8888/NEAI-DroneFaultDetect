@@ -1,5 +1,5 @@
 Application/User/generated/Texts.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/texts/src/Texts.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/texts/src/Texts.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \

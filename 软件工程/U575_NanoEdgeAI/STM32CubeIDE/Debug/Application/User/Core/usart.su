@@ -1,3 +1,0 @@
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usart.c:31:6:MX_USART1_UART_Init	8	static
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usart.c:74:6:HAL_UART_MspInit	248	static
-D:/PersonalData/Prj/STM32Prj/U575NanoEdgeAI/Core/Src/usart.c:115:6:HAL_UART_MspDeInit	16	static

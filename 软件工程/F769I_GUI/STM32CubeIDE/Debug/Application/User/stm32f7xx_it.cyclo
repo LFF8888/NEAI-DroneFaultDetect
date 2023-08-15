@@ -1,0 +1,15 @@
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:81:6:NMI_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:94:6:HardFault_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:109:6:MemManage_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:124:6:BusFault_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:139:6:UsageFault_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:154:6:DebugMon_Handler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:174:6:USART1_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:188:6:TIM6_DAC_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:202:6:DMA2_Stream0_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:216:6:DMA2_Stream1_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:230:6:LTDC_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:246:6:DMA2D_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:260:6:I2C4_EV_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:274:6:DSI_IRQHandler	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/stm32f7xx_it.c:288:6:JPEG_IRQHandler	1

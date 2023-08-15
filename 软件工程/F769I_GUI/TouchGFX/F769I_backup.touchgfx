@@ -1,0 +1,964 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "firstScreeen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 0
+          },
+          {
+            "Type": "Image",
+            "Name": "ST_LOGO",
+            "X": 192,
+            "Y": 75,
+            "Width": 415,
+            "Height": 330,
+            "RelativeFilename": "ST_LOGO.png",
+            "Alpha": 0,
+            "Fadeable": true
+          },
+          {
+            "Type": "Box",
+            "Name": "frontGround",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Green": 225,
+              "Blue": 255
+            },
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "backGroung_fadeIn",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 800,
+              "ActionComponent": "backGround"
+            }
+          },
+          {
+            "InteractionName": "ST_LOGO_fadeIn",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "backGroung_fadeIn"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1200,
+              "ActionComponent": "ST_LOGO"
+            }
+          },
+          {
+            "InteractionName": "frontGroung_fadeIn",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "ST_LOGO_fadeIn"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 800,
+              "AnimationDelay": 1000,
+              "ActionComponent": "frontGround"
+            }
+          },
+          {
+            "InteractionName": "changeScreen",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "frontGroung_fadeIn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "mainScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "startScreen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 234,
+              "Blue": 241
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "backgroung",
+            "Width": 800,
+            "Height": 423,
+            "RelativeFilename": "about\\about.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "returnBut",
+            "Y": 400,
+            "Width": 98,
+            "Height": 80,
+            "Pressed": "but\\return2.png",
+            "Released": "but\\return1.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "returnMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "returnBut"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "mainScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "monitorScreen",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 234,
+              "Blue": 241
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "backgroung",
+            "Width": 800,
+            "Height": 440,
+            "RelativeFilename": "monitor\\monitor.png"
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge1",
+            "X": 21,
+            "Y": 305,
+            "Width": 120,
+            "Height": 120,
+            "Preset": "light_theme\\presets\\gauges\\tiny\\active_precision.json",
+            "FileNameBackground": "__generated\\light_theme_images_widgets_gauge_tiny_backgrounds_active_precision.png",
+            "RotationCenterX": 60.0,
+            "RotationCenterY": 60.0,
+            "StartAngle": -90.0,
+            "EndAngle": 90.0,
+            "RangeMax": 100.0,
+            "InitialValue": 50.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\light_theme_images_widgets_gauge_tiny_needles_rough.png",
+            "NeedleRotationCenterX": 5.0,
+            "NeedleRotationCenterY": 33.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge1_1",
+            "X": 293,
+            "Y": 305,
+            "Width": 120,
+            "Height": 120,
+            "Preset": "light_theme\\presets\\gauges\\tiny\\active_precision.json",
+            "FileNameBackground": "__generated\\light_theme_images_widgets_gauge_tiny_backgrounds_active_precision.png",
+            "RotationCenterX": 60.0,
+            "RotationCenterY": 60.0,
+            "StartAngle": -90.0,
+            "EndAngle": 90.0,
+            "RangeMax": 100.0,
+            "InitialValue": 50.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\light_theme_images_widgets_gauge_tiny_needles_rough.png",
+            "NeedleRotationCenterX": 5.0,
+            "NeedleRotationCenterY": 33.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "FileNameArc": "__generated\\light_theme_images_widgets_gauge_tiny_fillers_swoop.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 12.0,
+            "ArcY": 12.0,
+            "ArcWidth": 95.0,
+            "ArcHeight": 71.0,
+            "ArcRadius": 50.0,
+            "ArcLineWidth": 49.0,
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge1_1_1",
+            "X": 125,
+            "Y": 241,
+            "Width": 184,
+            "Height": 184,
+            "Preset": "light_theme\\presets\\gauges\\small\\dark_filled.json",
+            "FileNameBackground": "__generated\\light_theme_images_widgets_gauge_small_backgrounds_dark_filled.png",
+            "RotationCenterX": 92.0,
+            "RotationCenterY": 92.0,
+            "StartAngle": -119.0,
+            "EndAngle": 122.0,
+            "RangeMax": 100.0,
+            "InitialValue": 50.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\light_theme_images_widgets_gauge_small_needles_rough.png",
+            "NeedleRotationCenterX": 8.0,
+            "NeedleRotationCenterY": 53.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": true,
+            "FileNameArc": "__generated\\light_theme_images_widgets_gauge_small_fillers_swoop.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 19.0,
+            "ArcY": 19.0,
+            "ArcWidth": 146.0,
+            "ArcHeight": 108.0,
+            "ArcRadius": 79.0,
+            "ArcLineWidth": 78.0,
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "design",
+            "X": 173,
+            "Y": 423,
+            "Width": 88,
+            "Height": 22,
+            "TextId": "__SingleUse_TYLI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 133,
+              "Green": 133,
+              "Blue": 133
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "tch_LOGO",
+            "X": 133,
+            "Y": 446,
+            "Width": 169,
+            "Height": 31,
+            "RelativeFilename": "tchGFX_LOGO.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "returnBut",
+            "Y": 400,
+            "Width": 98,
+            "Height": 80,
+            "Pressed": "but\\return2.png",
+            "Released": "but\\return1.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "returnMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "returnBut"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "mainScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "mainScreen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 234,
+              "Blue": 241
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "plane",
+            "Width": 800,
+            "Height": 354,
+            "LockPosition": true,
+            "RelativeFilename": "plane.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "link_img",
+            "X": 650,
+            "Y": 258,
+            "Width": 27,
+            "Height": 13,
+            "RelativeFilename": "state.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "rssi_img",
+            "X": 486,
+            "Y": 253,
+            "Width": 24,
+            "Height": 20,
+            "RelativeFilename": "rssi.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "line",
+            "X": 486,
+            "Y": 173,
+            "Width": 6,
+            "Height": 30,
+            "Color": {
+              "Red": 128,
+              "Green": 128,
+              "Blue": 128
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "link",
+            "X": 686,
+            "Y": 251,
+            "Width": 54,
+            "Height": 20,
+            "TextId": "__SingleUse_I1KO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 117,
+              "Green": 117,
+              "Blue": 117
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "status",
+            "X": 649,
+            "Y": 218,
+            "Width": 40,
+            "Height": 23,
+            "TextId": "__SingleUse_60YG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 84,
+              "Green": 84,
+              "Blue": 84
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "RSSI",
+            "X": 485,
+            "Y": 218,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_BS2W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 84,
+              "Green": 84,
+              "Blue": 84
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "dbm",
+            "X": 530,
+            "Y": 250,
+            "Width": 57,
+            "Height": 27,
+            "TextId": "__SingleUse_P5ZP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 158,
+              "Green": 158,
+              "Blue": 158
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5K75",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "name",
+            "X": 500,
+            "Y": 171,
+            "Width": 216,
+            "Height": 27,
+            "TextId": "__SingleUse_JEQJ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "about",
+            "X": 642,
+            "Y": 365,
+            "Width": 150,
+            "Height": 87,
+            "Pressed": "but\\a1.png",
+            "Released": "but\\b1.png",
+            "TextId": "__SingleUse_RJO1",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "bat",
+            "X": 483,
+            "Y": 365,
+            "Width": 150,
+            "Height": 87,
+            "Pressed": "but\\a5.png",
+            "Released": "but\\b5.png",
+            "TextId": "__SingleUse_BTWS",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "home",
+            "X": 321,
+            "Y": 363,
+            "Width": 157,
+            "Height": 92,
+            "Pressed": "but\\a4.png",
+            "Released": "but\\c1.png",
+            "TextId": "__SingleUse_I6WS",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "monitor",
+            "X": 166,
+            "Y": 365,
+            "Width": 150,
+            "Height": 87,
+            "Pressed": "but\\a3.png",
+            "Released": "but\\b3.png",
+            "TextId": "__SingleUse_KN21",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "start",
+            "X": 8,
+            "Y": 365,
+            "Width": 150,
+            "Height": 87,
+            "Pressed": "but\\a2.png",
+            "Released": "but\\b2.png",
+            "TextId": "__SingleUse_XWVE",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "disconnet",
+            "X": 650,
+            "Y": 286,
+            "Width": 113,
+            "Height": 43,
+            "Pressed": "but\\red2.png",
+            "Released": "but\\red1.png",
+            "TextId": "__SingleUse_NU2D",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "refreash",
+            "X": 486,
+            "Y": 286,
+            "Width": 113,
+            "Height": 43,
+            "Pressed": "but\\blue2.png",
+            "Released": "but\\blue1.png",
+            "TextId": "__SingleUse_HY2O",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "about",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "about"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "aboutScreen"
+            }
+          },
+          {
+            "InteractionName": "bat",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "bat"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "batScreen"
+            }
+          },
+          {
+            "InteractionName": "monitor",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "monitor"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "monitorScreen"
+            }
+          },
+          {
+            "InteractionName": "start",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "start"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "startScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "batScreen",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 234,
+              "Blue": 241
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "returnBut",
+            "Y": 400,
+            "Width": 98,
+            "Height": 80,
+            "Pressed": "but\\return2.png",
+            "Released": "but\\return1.png"
+          },
+          {
+            "Type": "StaticGraph",
+            "Name": "graph1",
+            "X": 74,
+            "Y": 123,
+            "Width": 556,
+            "Height": 234,
+            "DataSeed": 1279103375,
+            "NumberOfValues": 100,
+            "MaxX": 100.0,
+            "MinX": -100.0,
+            "PrecisionX": "1",
+            "MaxY": 100.0,
+            "MinY": -100.0,
+            "PrecisionY": "1",
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "returnMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "returnBut"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "mainScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "aboutScreen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backGround",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 234,
+              "Blue": 241
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "backgroung",
+            "Width": 800,
+            "Height": 423,
+            "RelativeFilename": "about\\about.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "arrow",
+            "X": 104,
+            "Y": 139,
+            "Width": 73,
+            "Height": 107,
+            "FileNameFirst": "animate\\arrow1.png",
+            "FileNameLast": "animate\\arrow3.png",
+            "UpdateTicksInterval": 400,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "Image",
+            "Name": "tch_LOGO",
+            "X": 316,
+            "Y": 446,
+            "Width": 169,
+            "Height": 31,
+            "RelativeFilename": "tchGFX_LOGO.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "design",
+            "X": 356,
+            "Y": 423,
+            "Width": 88,
+            "Height": 22,
+            "TextId": "__SingleUse_N86C",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 133,
+              "Green": 133,
+              "Blue": 133
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "embedded",
+            "X": 610,
+            "Y": 431,
+            "Width": 144,
+            "Height": 40,
+            "TextId": "__SingleUse_UV2T",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "AboutCn",
+            "X": 49,
+            "Y": 37,
+            "Width": 56,
+            "Height": 31,
+            "TextId": "__SingleUse_U4E7",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "AboutEng",
+            "X": 127,
+            "Y": 37,
+            "Width": 65,
+            "Height": 32,
+            "TextId": "__SingleUse_7JUG",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Button",
+            "Name": "returnBut",
+            "Y": 400,
+            "Width": 98,
+            "Height": 80,
+            "Pressed": "but\\return2.png",
+            "Released": "but\\return1.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "textContainer",
+            "X": 296,
+            "Y": 132,
+            "Width": 452,
+            "Height": 263,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "introduceText",
+                "Y": 15,
+                "Width": 408,
+                "Height": 513,
+                "LockPosition": true,
+                "TextId": "__SingleUse_P0EB",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Slider",
+            "Name": "sliderDrone",
+            "X": 22,
+            "Y": 119,
+            "Width": 236,
+            "Height": 254,
+            "BackgroundUnselected": "about\\sliderBar.png",
+            "BackgroundSelected": "about\\sliderBar.png",
+            "Indicator": "about\\fly.png",
+            "BackgroundX": 16,
+            "BackgroundY": 12,
+            "IndicatorMax": 140,
+            "ValueMax": 100
+          },
+          {
+            "Type": "TextArea",
+            "Name": "noteText",
+            "X": 70,
+            "Y": 382,
+            "Width": 140,
+            "Height": 23,
+            "TextId": "__SingleUse_EIL5",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "returnMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "returnBut"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "mainScreen"
+            }
+          },
+          {
+            "InteractionName": "slideText",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "sliderDrone"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "int16_t yPot =  15 - value * 4;\r\nintroduceText.setY(yPot);\r\ntextContainer.invalidate();"
+            }
+          },
+          {
+            "InteractionName": "arrowFade",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "sliderDrone"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "arrow"
+            }
+          },
+          {
+            "InteractionName": "noteFade",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "sliderDrone"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "noteText"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "F769I",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "mainScreen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32F769I_DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector"
+    ]
+  },
+  "Version": "4.21.4",
+  "CreatedBy": "4.21.4"
+}

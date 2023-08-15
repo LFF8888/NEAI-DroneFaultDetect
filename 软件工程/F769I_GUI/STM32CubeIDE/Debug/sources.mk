@@ -1,6 +1,6 @@
 ################################################################################
-# Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# 自动生成的文件。不要编辑！
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 ELF_SRCS := 
@@ -14,6 +14,7 @@ C_SRCS :=
 CPP_SRCS := 
 S_UPPER_SRCS := 
 O_SRCS := 
+CYCLO_FILES := 
 OBJDUMP_LIST := 
 C_UPPER_DEPS := 
 S_DEPS := 
@@ -30,7 +31,7 @@ MAP_FILES :=
 S_UPPER_DEPS := 
 CPP_DEPS := 
 
-# Every subdirectory with source files must be described here
+# 此处必须描述包含源文件的每个子目录
 SUBDIRS := \
 Application/Startup \
 Application/User/LIBJPEG/App \

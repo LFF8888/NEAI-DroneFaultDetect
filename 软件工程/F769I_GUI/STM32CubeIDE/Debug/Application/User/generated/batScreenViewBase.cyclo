@@ -1,0 +1,81 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:127:17:virtual int touchgfx::AbstractDataGraph::getScaleX() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:162:17:virtual int touchgfx::AbstractDataGraph::getScaleY() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:172:18:virtual void touchgfx::AbstractDataGraph::setAlpha(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:440:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(int, int)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:446:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(float, float)	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:478:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, int)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:484:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, float)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:507:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(int, int)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:515:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(float, float)	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:543:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, int)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:549:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, float)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:559:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinAsInt() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:569:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMinAsFloat() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:583:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinScaled() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:593:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxAsInt() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:603:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMaxAsFloat() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:617:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxScaled() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:627:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinAsInt() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:637:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMinAsFloat() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:649:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinScaled() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:659:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxAsInt() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:669:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMaxAsFloat() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:681:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxScaled() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1880:17:virtual int touchgfx::StaticDataGraph::indexToXAxis(int, int) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1887:25:virtual touchgfx::CWRUtil::Q5 touchgfx::StaticDataGraph::indexToScreenXQ5(int16_t) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1892:25:virtual touchgfx::CWRUtil::Q5 touchgfx::StaticDataGraph::indexToScreenYQ5(int16_t) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:66:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:72:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:118:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getMinimalRect() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:134:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getSolidRect() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<batScreenPresenter>::~View()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp:203:6:virtual void batScreenViewBase::setupScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<batScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:54:7:touchgfx::Graph<100>::~Graph()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = batScreenViewBase; T1 = const touchgfx::AbstractButton&]	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = batScreenViewBase; T1 = const touchgfx::AbstractButton&]	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<batScreenPresenter>::~View()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:54:7:virtual touchgfx::Graph<100>::~Graph()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<batScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp:198:1:batScreenViewBase::~batScreenViewBase()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp:198:1:virtual batScreenViewBase::~batScreenViewBase()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1779:17:virtual int touchgfx::StaticDataGraph::indexToDataPointYScaled(int16_t) const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1763:17:virtual int touchgfx::StaticDataGraph::indexToDataPointXScaled(int16_t) const	2
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp:208:6:void batScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:touchgfx::Widget::Widget()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:828:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::muldiv_toQ5(int32_t, int32_t, int32_t)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1282:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenYQ5(int) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	4
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/batscreen_screen/batScreenViewBase.cpp:10:1:batScreenViewBase::batScreenViewBase()	1

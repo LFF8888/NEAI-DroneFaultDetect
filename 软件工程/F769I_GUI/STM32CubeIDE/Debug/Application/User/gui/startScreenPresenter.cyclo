@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/startscreen_screen/startScreenPresenter.hpp:28:13:startScreenPresenter::~startScreenPresenter()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/startscreen_screen/startScreenPresenter.cpp:10:6:virtual void startScreenPresenter::activate()	1
+../../TouchGFX/gui/include/gui/startscreen_screen/startScreenPresenter.hpp:28:13:virtual startScreenPresenter::~startScreenPresenter()	1
+../../TouchGFX/gui/include/gui/startscreen_screen/startScreenPresenter.hpp:28:13:virtual void* startScreenPresenter::_ZThn4_N20startScreenPresenterD1Ev()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/startscreen_screen/startScreenPresenter.cpp:4:1:startScreenPresenter::startScreenPresenter(startScreenView&)	1

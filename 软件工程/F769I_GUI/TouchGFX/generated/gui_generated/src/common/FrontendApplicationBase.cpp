@@ -9,20 +9,18 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/start_screen/StartView.hpp>
-#include <gui/start_screen/StartPresenter.hpp>
-#include <gui/main_screen/mainView.hpp>
-#include <gui/main_screen/mainPresenter.hpp>
-#include <gui/wifi_screen/WiFiView.hpp>
-#include <gui/wifi_screen/WiFiPresenter.hpp>
-#include <gui/battery_screen/BatteryView.hpp>
-#include <gui/battery_screen/BatteryPresenter.hpp>
-#include <gui/satelite_screen/SateliteView.hpp>
-#include <gui/satelite_screen/SatelitePresenter.hpp>
-#include <gui/control_screen/ControlView.hpp>
-#include <gui/control_screen/ControlPresenter.hpp>
-#include <gui/map_screen/MapView.hpp>
-#include <gui/map_screen/MapPresenter.hpp>
+#include <gui/firstscreeen_screen/firstScreeenView.hpp>
+#include <gui/firstscreeen_screen/firstScreeenPresenter.hpp>
+#include <gui/lockscreen_screen/lockScreenView.hpp>
+#include <gui/lockscreen_screen/lockScreenPresenter.hpp>
+#include <gui/mainscreen_screen/mainScreenView.hpp>
+#include <gui/mainscreen_screen/mainScreenPresenter.hpp>
+#include <gui/startscreen_screen/startScreenView.hpp>
+#include <gui/startscreen_screen/startScreenPresenter.hpp>
+#include <gui/batscreen_screen/batScreenView.hpp>
+#include <gui/batscreen_screen/batScreenPresenter.hpp>
+#include <gui/aboutscreen_screen/aboutScreenView.hpp>
+#include <gui/aboutscreen_screen/aboutScreenPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -35,110 +33,98 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
     touchgfx::HAL::getInstance()->setDisplayOrientation(touchgfx::ORIENTATION_LANDSCAPE);
     touchgfx::Texts::setLanguage(GB);
     reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
+    reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableDecompressorL8_All();
 }
 
 /*
  * Screen Transition Declarations
  */
 
-// Start
+// firstScreeen
 
-void FrontendApplicationBase::gotoStartScreenNoTransition()
+void FrontendApplicationBase::gotofirstScreeenScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoStartScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotofirstScreeenScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoStartScreenNoTransitionImpl()
+void FrontendApplicationBase::gotofirstScreeenScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<StartView, StartPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<firstScreeenView, firstScreeenPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// main
+// lockScreen
 
-void FrontendApplicationBase::gotomainScreenCoverTransitionNorth()
+void FrontendApplicationBase::gotolockScreenScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotomainScreenCoverTransitionNorthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotolockScreenScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotomainScreenCoverTransitionNorthImpl()
+void FrontendApplicationBase::gotolockScreenScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<mainView, mainPresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<lockScreenView, lockScreenPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotomainScreenCoverTransitionWest()
+// mainScreen
+
+void FrontendApplicationBase::gotomainScreenScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotomainScreenCoverTransitionWestImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotomainScreenScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotomainScreenCoverTransitionWestImpl()
+void FrontendApplicationBase::gotomainScreenScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<mainView, mainPresenter, touchgfx::CoverTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<mainScreenView, mainScreenPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// WiFi
-
-void FrontendApplicationBase::gotoWiFiScreenCoverTransitionEast()
+void FrontendApplicationBase::gotomainScreenScreenCoverTransitionWest()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoWiFiScreenCoverTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotomainScreenScreenCoverTransitionWestImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoWiFiScreenCoverTransitionEastImpl()
+void FrontendApplicationBase::gotomainScreenScreenCoverTransitionWestImpl()
 {
-    touchgfx::makeTransition<WiFiView, WiFiPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<mainScreenView, mainScreenPresenter, touchgfx::CoverTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// Battery
+// startScreen
 
-void FrontendApplicationBase::gotoBatteryScreenCoverTransitionEast()
+void FrontendApplicationBase::gotostartScreenScreenCoverTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoBatteryScreenCoverTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotostartScreenScreenCoverTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoBatteryScreenCoverTransitionEastImpl()
+void FrontendApplicationBase::gotostartScreenScreenCoverTransitionEastImpl()
 {
-    touchgfx::makeTransition<BatteryView, BatteryPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<startScreenView, startScreenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// Satelite
+// batScreen
 
-void FrontendApplicationBase::gotoSateliteScreenCoverTransitionEast()
+void FrontendApplicationBase::gotobatScreenScreenCoverTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoSateliteScreenCoverTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotobatScreenScreenCoverTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoSateliteScreenCoverTransitionEastImpl()
+void FrontendApplicationBase::gotobatScreenScreenCoverTransitionEastImpl()
 {
-    touchgfx::makeTransition<SateliteView, SatelitePresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<batScreenView, batScreenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// Control
+// aboutScreen
 
-void FrontendApplicationBase::gotoControlScreenCoverTransitionEast()
+void FrontendApplicationBase::gotoaboutScreenScreenCoverTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoControlScreenCoverTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoaboutScreenScreenCoverTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoControlScreenCoverTransitionEastImpl()
+void FrontendApplicationBase::gotoaboutScreenScreenCoverTransitionEastImpl()
 {
-    touchgfx::makeTransition<ControlView, ControlPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Map
-
-void FrontendApplicationBase::gotoMapScreenCoverTransitionEast()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoMapScreenCoverTransitionEastImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoMapScreenCoverTransitionEastImpl()
-{
-    touchgfx::makeTransition<MapView, MapPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<aboutScreenView, aboutScreenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

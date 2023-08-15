@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/lockscreen_screen/lockScreenPresenter.hpp:28:13:lockScreenPresenter::~lockScreenPresenter()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/lockscreen_screen/lockScreenPresenter.cpp:10:6:virtual void lockScreenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/lockscreen_screen/lockScreenPresenter.hpp:28:13:virtual lockScreenPresenter::~lockScreenPresenter()	8	static
+../../TouchGFX/gui/include/gui/lockscreen_screen/lockScreenPresenter.hpp:28:13:virtual void* lockScreenPresenter::_ZThn4_N19lockScreenPresenterD1Ev()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/lockscreen_screen/lockScreenPresenter.cpp:4:1:lockScreenPresenter::lockScreenPresenter(lockScreenView&)	8	static

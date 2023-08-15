@@ -1,5 +1,0 @@
-../Application/User/Core/MPU6050.c:13:6:MPU6050_WriteReg	16	static
-../Application/User/Core/MPU6050.c:29:9:MPU6050_ReadReg	24	static
-../Application/User/Core/MPU6050.c:54:6:MPU6050_Init	8	static
-../Application/User/Core/MPU6050.c:64:9:MPU6050_GetID	8	static
-../Application/User/Core/MPU6050.c:69:6:MPU6050_GetData	32	static

@@ -14,20 +14,18 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/start_screen/StartView.hpp>
-#include <gui/start_screen/StartPresenter.hpp>
-#include <gui/main_screen/mainView.hpp>
-#include <gui/main_screen/mainPresenter.hpp>
-#include <gui/wifi_screen/WiFiView.hpp>
-#include <gui/wifi_screen/WiFiPresenter.hpp>
-#include <gui/battery_screen/BatteryView.hpp>
-#include <gui/battery_screen/BatteryPresenter.hpp>
-#include <gui/satelite_screen/SateliteView.hpp>
-#include <gui/satelite_screen/SatelitePresenter.hpp>
-#include <gui/control_screen/ControlView.hpp>
-#include <gui/control_screen/ControlPresenter.hpp>
-#include <gui/map_screen/MapView.hpp>
-#include <gui/map_screen/MapPresenter.hpp>
+#include <gui/firstscreeen_screen/firstScreeenView.hpp>
+#include <gui/firstscreeen_screen/firstScreeenPresenter.hpp>
+#include <gui/lockscreen_screen/lockScreenView.hpp>
+#include <gui/lockscreen_screen/lockScreenPresenter.hpp>
+#include <gui/mainscreen_screen/mainScreenView.hpp>
+#include <gui/mainscreen_screen/mainScreenPresenter.hpp>
+#include <gui/startscreen_screen/startScreenView.hpp>
+#include <gui/startscreen_screen/startScreenPresenter.hpp>
+#include <gui/batscreen_screen/batScreenView.hpp>
+#include <gui/batscreen_screen/batScreenPresenter.hpp>
+#include <gui/aboutscreen_screen/aboutScreenView.hpp>
+#include <gui/aboutscreen_screen/aboutScreenPresenter.hpp>
 
 
 /**
@@ -50,14 +48,13 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< StartView,
-            touchgfx::meta::TypeList< mainView,
-            touchgfx::meta::TypeList< WiFiView,
-            touchgfx::meta::TypeList< BatteryView,
-            touchgfx::meta::TypeList< SateliteView,
-            touchgfx::meta::TypeList< ControlView,
-            touchgfx::meta::TypeList< MapView,
-            touchgfx::meta::Nil > > > > > >
+    typedef touchgfx::meta::TypeList< firstScreeenView,
+            touchgfx::meta::TypeList< lockScreenView,
+            touchgfx::meta::TypeList< mainScreenView,
+            touchgfx::meta::TypeList< startScreenView,
+            touchgfx::meta::TypeList< batScreenView,
+            touchgfx::meta::TypeList< aboutScreenView,
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -69,14 +66,13 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< StartPresenter,
-            touchgfx::meta::TypeList< mainPresenter,
-            touchgfx::meta::TypeList< WiFiPresenter,
-            touchgfx::meta::TypeList< BatteryPresenter,
-            touchgfx::meta::TypeList< SatelitePresenter,
-            touchgfx::meta::TypeList< ControlPresenter,
-            touchgfx::meta::TypeList< MapPresenter,
-            touchgfx::meta::Nil > > > > > >
+    typedef touchgfx::meta::TypeList< firstScreeenPresenter,
+            touchgfx::meta::TypeList< lockScreenPresenter,
+            touchgfx::meta::TypeList< mainScreenPresenter,
+            touchgfx::meta::TypeList< startScreenPresenter,
+            touchgfx::meta::TypeList< batScreenPresenter,
+            touchgfx::meta::TypeList< aboutScreenPresenter,
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -89,10 +85,9 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::TypeList< CoverTransition<NORTH>,
             touchgfx::meta::TypeList< CoverTransition<EAST>,
             touchgfx::meta::TypeList< CoverTransition<WEST>,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**
@@ -102,7 +97,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoStartScreenNoTransition();
+        app.gotofirstScreeenScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

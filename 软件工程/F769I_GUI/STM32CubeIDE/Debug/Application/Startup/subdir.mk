@@ -1,9 +1,9 @@
 ################################################################################
-# Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# 自动生成的文件。不要编辑！
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
-# Add inputs and outputs from these tool invocations to the build variables 
+# 将这些工具调用的输入和输出添加到构建变量 
 S_SRCS += \
 ../Application/Startup/startup_stm32f769nihx.s 
 
@@ -14,7 +14,7 @@ OBJS += \
 ./Application/Startup/startup_stm32f769nihx.o 
 
 
-# Each subdirectory must supply rules for building sources it contributes
+# 每个子目录必须为构建它所贡献的源提供规则
 Application/Startup/%.o: ../Application/Startup/%.s Application/Startup/subdir.mk
 	arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
 

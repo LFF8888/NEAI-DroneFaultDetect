@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -109,7 +109,7 @@ void SVGImage::draw(const Rect& invalidatedArea) const
 
     renderer->setup(*this, invalidatedArea);
 
-    Matrix3x3 matrix = getTransformationMatrix();
+    const Matrix3x3 matrix = getTransformationMatrix();
     for (const VGShape* shape = image.shape; shape != 0; shape = shape->next)
     {
         Matrix3x3 shapeMatrix;
@@ -133,7 +133,7 @@ void SVGImage::draw(const Rect& invalidatedArea) const
         const int16_t x_max = static_cast<int16_t>(ceilf(MAX(MAX(p1.x, p2.x), MAX(p3.x, p4.x))));
         const int16_t y_min = static_cast<int16_t>(floorf(MIN(MIN(p1.y, p2.y), MIN(p3.y, p4.y))));
         const int16_t y_max = static_cast<int16_t>(ceilf(MAX(MAX(p1.y, p2.y), MAX(p3.y, p4.y))));
-        Rect shapeBox(x_min, y_min, (x_max - x_min) + 1, (y_max - y_min) + 1);
+        const Rect shapeBox(x_min, y_min, (x_max - x_min) + 1, (y_max - y_min) + 1);
         if (shapeBox.intersect(invalidatedArea))
         {
             renderer->setTransformationMatrix(shapeMatrix);

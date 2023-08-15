@@ -1,0 +1,8 @@
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:1514:6:StartDefaultTask	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:1399:16:QSPI_WriteEnable.constprop	2
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:149:6:HAL_UARTEx_RxEventCallback	2
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:276:6:SystemClock_Config	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:496:6:MX_I2C4_Init	1
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:164:5:main	30
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:1601:6:HAL_TIM_PeriodElapsedCallback	2
+D:/PersonalData/Prj/STM32Prj/F769I/Core/Src/main.c:1617:6:Error_Handler	1

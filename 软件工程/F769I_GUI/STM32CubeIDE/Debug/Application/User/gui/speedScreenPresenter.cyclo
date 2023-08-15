@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/speedscreen_screen/speedScreenPresenter.hpp:28:13:speedScreenPresenter::~speedScreenPresenter()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/speedscreen_screen/speedScreenPresenter.cpp:10:6:virtual void speedScreenPresenter::activate()	1
+../../TouchGFX/gui/include/gui/speedscreen_screen/speedScreenPresenter.hpp:28:13:virtual speedScreenPresenter::~speedScreenPresenter()	1
+../../TouchGFX/gui/include/gui/speedscreen_screen/speedScreenPresenter.hpp:28:13:virtual void* speedScreenPresenter::_ZThn4_N20speedScreenPresenterD1Ev()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/speedscreen_screen/speedScreenPresenter.cpp:4:1:speedScreenPresenter::speedScreenPresenter(speedScreenView&)	1

@@ -9,21 +9,30 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
 {
     switch (typography)
     {
-    case Typography::DEFAULT:
-        // SIMYOU_TTF_20_4bpp
+    case Typography::SY16:
+        // SourceHanSansSC_Bold_16_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
-    case Typography::LARGE:
-        // verdana_40_4bpp
+    case Typography::SY18:
+        // SourceHanSansSC_Bold_18_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
-    case Typography::SMALL:
-        // verdana_10_4bpp
+    case Typography::SY20:
+        // SourceHanSansSC_Bold_20_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
-    case Typography::TYPOGRAPHY_00:
-        // verdana_20_4bpp
+    case Typography::SY24:
+        // SourceHanSansSC_Bold_24_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
-    case Typography::TYPOGRAPHY_01:
-        // SIMYOU_TTF_40_8bpp
+    case Typography::SY28:
+        // SourceHanSansSC_Bold_28_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+    case Typography::SY32:
+        // SourceHanSansSC_Bold_32_2bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::SY36:
+        // SourceHanSansSC_Bold_36_2bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+    case Typography::SY40:
+        // SourceHanSansSC_Bold_40_2bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     default:
         return 0;
     }

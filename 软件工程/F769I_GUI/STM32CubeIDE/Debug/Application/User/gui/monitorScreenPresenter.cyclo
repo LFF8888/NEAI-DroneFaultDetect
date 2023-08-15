@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/monitorscreen_screen/monitorScreenPresenter.hpp:28:13:monitorScreenPresenter::~monitorScreenPresenter()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/monitorscreen_screen/monitorScreenPresenter.cpp:10:6:virtual void monitorScreenPresenter::activate()	1
+../../TouchGFX/gui/include/gui/monitorscreen_screen/monitorScreenPresenter.hpp:28:13:virtual monitorScreenPresenter::~monitorScreenPresenter()	1
+../../TouchGFX/gui/include/gui/monitorscreen_screen/monitorScreenPresenter.hpp:28:13:virtual void* monitorScreenPresenter::_ZThn4_N22monitorScreenPresenterD1Ev()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/monitorscreen_screen/monitorScreenPresenter.cpp:4:1:monitorScreenPresenter::monitorScreenPresenter(monitorScreenView&)	1

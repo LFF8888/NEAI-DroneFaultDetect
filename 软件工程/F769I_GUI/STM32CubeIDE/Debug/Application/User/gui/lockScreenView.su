@@ -1,0 +1,7 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/lockscreen_screen/lockScreenView.cpp:13:6:virtual void lockScreenView::tearDownScreen()	0	static
+../../TouchGFX/gui/include/gui/lockscreen_screen/lockScreenView.hpp:11:13:lockScreenView::~lockScreenView()	8	static
+../../TouchGFX/gui/include/gui/lockscreen_screen/lockScreenView.hpp:11:13:virtual lockScreenView::~lockScreenView()	8	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/lockscreen_screen/lockScreenView.cpp:3:1:lockScreenView::lockScreenView()	8	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/lockscreen_screen/lockScreenView.cpp:8:6:virtual void lockScreenView::setupScreen()	0	static

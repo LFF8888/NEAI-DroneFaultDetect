@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/aboutscreen_screen/aboutScreenPresenter.hpp:28:13:aboutScreenPresenter::~aboutScreenPresenter()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/aboutscreen_screen/aboutScreenPresenter.cpp:10:6:virtual void aboutScreenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/aboutscreen_screen/aboutScreenPresenter.hpp:28:13:virtual aboutScreenPresenter::~aboutScreenPresenter()	8	static
+../../TouchGFX/gui/include/gui/aboutscreen_screen/aboutScreenPresenter.hpp:28:13:virtual void* aboutScreenPresenter::_ZThn4_N20aboutScreenPresenterD1Ev()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/aboutscreen_screen/aboutScreenPresenter.cpp:4:1:aboutScreenPresenter::aboutScreenPresenter(aboutScreenView&)	8	static

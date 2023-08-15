@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -29,8 +29,8 @@
 namespace touchgfx
 {
 /**
- * A SwipeContainer is a Container with a horizontally laid out list of identically sized Drawables. The bottom of
- * the SwipeContainer shows a page indicator to indicate the position in the horizontal
+ * A SwipeContainer is a Container with a horizontally laid out list of identically sized Drawables.
+ * The bottom of the SwipeContainer shows a page indicator to indicate the position in the horizontal
  * list of items in the SwipeContainer.
  *
  * @see ListLayout

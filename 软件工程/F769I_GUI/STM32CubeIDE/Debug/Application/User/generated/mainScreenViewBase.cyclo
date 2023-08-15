@@ -1,0 +1,62 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:48:18:virtual void touchgfx::TextArea::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:54:18:virtual void touchgfx::TextArea::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:60:18:virtual touchgfx::Rect touchgfx::TextArea::getSolidRect() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:89:18:virtual void touchgfx::TextArea::setAlpha(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:391:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard1() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:86:18:virtual bool touchgfx::AbstractButton::getPressedState() const	1
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<mainScreenPresenter>::~View()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:138:1:mainScreenViewBase::~mainScreenViewBase()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:143:6:virtual void mainScreenViewBase::setupScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:84:18:void touchgfx::FadeAnimator<T>::setFadeAnimationDelay(uint16_t) [with T = touchgfx::TextArea]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<mainScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:41:7:touchgfx::FadeAnimator<touchgfx::Button>::~FadeAnimator()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:41:7:touchgfx::FadeAnimator<touchgfx::TextArea>::~FadeAnimator()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = mainScreenViewBase; T1 = const touchgfx::AbstractButton&]	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = mainScreenViewBase; T1 = const touchgfx::AbstractButton&]	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:84:18:void touchgfx::FadeAnimator<T>::setFadeAnimationDelay(uint16_t) [with T = touchgfx::Button]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:96:22:uint16_t touchgfx::FadeAnimator<T>::getFadeAnimationDelay() const [with T = touchgfx::Button]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:96:22:uint16_t touchgfx::FadeAnimator<T>::getFadeAnimationDelay() const [with T = touchgfx::TextArea]	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:41:7:virtual touchgfx::FadeAnimator<touchgfx::TextArea>::~FadeAnimator()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:41:7:virtual touchgfx::FadeAnimator<touchgfx::Button>::~FadeAnimator()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<mainScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<mainScreenPresenter>::~View()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:138:1:virtual mainScreenViewBase::~mainScreenViewBase()	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:148:6:void mainScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	9
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:84:18:virtual void touchgfx::Button::invalidateContent() const	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:73:18:virtual void touchgfx::AbstractButton::executeAction()	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:157:18:void touchgfx::FadeAnimator<T>::handleTickEvent() [with T = touchgfx::Button]	8
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:touchgfx::Widget::Widget()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	2
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:9:1:mainScreenViewBase::mainScreenViewBase()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:165:10:void touchgfx::FadeAnimator<T>::nextFadeAnimationStep() [with T = touchgfx::TextArea]	8
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:157:18:void touchgfx::FadeAnimator<T>::handleTickEvent() [with T = touchgfx::TextArea]	1
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/gui_generated/src/mainscreen_screen/mainScreenViewBase.cpp:205:6:virtual void mainScreenViewBase::transitionBegins()	4

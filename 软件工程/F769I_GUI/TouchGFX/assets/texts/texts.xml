@@ -1,78 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.21.4">
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.22.0">
   <Languages>
     <Language Id="GB" />
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_N5NU" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">降低自动锁屏时间</Translation>
+      <Text Id="__SingleUse_W0Q0" Alignment="Center" TypographyId="SY32">
+        <Translation Language="GB">前方障碍！</Translation>
       </Text>
-      <Text Id="__SingleUse_FIE2" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">降低屏幕刷新率</Translation>
+      <Text Id="__SingleUse_NHIM" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">0.0</Translation>
       </Text>
-      <Text Id="__SingleUse_BIWI" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">自动开启省电模式</Translation>
+      <Text Id="__SingleUse_SOPT" Alignment="Center" TypographyId="SY16">
+        <Translation Language="GB">速度:&lt;value&gt;m/s</Translation>
       </Text>
-      <Text Id="__SingleUse_RMCD" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">差</Translation>
+      <Text Id="__SingleUse_B4XX" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">∞</Translation>
       </Text>
-      <Text Id="__SingleUse_SA5T" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">定位精度</Translation>
+      <Text Id="__SingleUse_Z579" Alignment="Center" TypographyId="SY16">
+        <Translation Language="GB">TOF &lt;value&gt; m</Translation>
       </Text>
-      <Text Id="__SingleUse_SGV7" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">请移至开阔地带！</Translation>
+      <Text Id="__SingleUse_SYUL" Alignment="Center" TypographyId="SY16">
+        <Translation Language="GB">电量:84%</Translation>
       </Text>
-      <Text Id="__SingleUse_ISLY" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">2</Translation>
+      <Text Id="__SingleUse_XXI1" Alignment="Center" TypographyId="SY16">
+        <Translation Language="GB">电压监测</Translation>
       </Text>
-      <Text Id="__SingleUse_122U" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">卫星数量</Translation>
+      <Text Id="__SingleUse_O5ES" Alignment="Center" TypographyId="SY24">
+        <Translation Language="GB">电量：84%</Translation>
       </Text>
-      <Text Id="__SingleUse_13ZG" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">良好</Translation>
+      <Text Id="__SingleUse_FCEW" Alignment="Center" TypographyId="SY24">
+        <Translation Language="GB">状态：放电</Translation>
       </Text>
-      <Text Id="__SingleUse_A92B" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">蓝牙信号</Translation>
+      <Text Id="__SingleUse_282G" Alignment="Center" TypographyId="SY32">
+        <Translation Language="GB">检测到自由落体！</Translation>
       </Text>
-      <Text Id="__SingleUse_FOPR" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">良好</Translation>
+      <Text Id="__SingleUse_PET7" Alignment="Center" TypographyId="SY40">
+        <Translation Language="GB">开始  Start</Translation>
       </Text>
-      <Text Id="__SingleUse_VR7X" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">优</Translation>
+      <Text Id="__SingleUse_PWYE" Alignment="Center" TypographyId="SY32">
+        <Translation Language="GB">桨叶异常振动！</Translation>
       </Text>
-      <Text Id="__SingleUse_7AEL" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">信号</Translation>
+      <Text Id="__SingleUse_GKND" Alignment="Center" TypographyId="SY32">
+        <Translation Language="GB">状态：正常</Translation>
       </Text>
-      <Text Id="__SingleUse_CZ2W" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">4G</Translation>
+      <Text Id="__SingleUse_7R5X" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">锁定</Translation>
       </Text>
-      <Text Id="__SingleUse_C4JO" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">遥控信号</Translation>
+      <Text Id="__SingleUse_CDDU" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">Designed by</Translation>
       </Text>
-      <Text Id="__SingleUse_BQXA" Alignment="Center" TypographyId="Typography_00">
-        <Translation Language="GB">&lt;&gt;</Translation>
+      <Text Id="__SingleUse_ZKA8" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">Designed by</Translation>
       </Text>
-      <Text Id="__SingleUse_O6Q1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">地图选点</Translation>
+      <Text Id="__SingleUse_3OZA" Alignment="Center" TypographyId="SY40">
+        <Translation Language="GB">电池  Battery</Translation>
       </Text>
-      <Text Id="__SingleUse_0UZ7" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">电池健康</Translation>
+      <Text Id="__SingleUse_KD1M" Alignment="Left" TypographyId="SY20">
+        <Translation Language="GB">ERROR!</Translation>
       </Text>
-      <Text Id="__SingleUse_TD4O" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">卫星定位</Translation>
+      <Text Id="__SingleUse_1TL7" Alignment="Center" TypographyId="SY20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_3TST" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">遥控信号</Translation>
+      <Text Id="__SingleUse_BWHC" Alignment="Left" TypographyId="SY18">
+        <Translation Language="GB">-42dBm</Translation>
+      </Text>
+      <Text Id="__SingleUse_9M9A" Alignment="Left" TypographyId="SY18">
+        <Translation Language="GB"> -46dBm</Translation>
+      </Text>
+      <Text Id="__SingleUse_EIL5" Alignment="Left" TypographyId="SY18">
+        <Translation Language="GB">向上拖动以浏览</Translation>
+      </Text>
+      <Text Id="__SingleUse_P0EB" Alignment="Left" TypographyId="SY24">
+        <Translation Language="GB">​                      基于NanoEdge AI的&#10;​                  无人机智慧故障检测系统&#10;&#10;​        随着科技的迅速发展，无人机的应用场&#10;景日益扩大。然而，一旦无人机出现故障并&#10;坠落，可能会造成严重的事故。因此，迫切&#10;需要设计一套高效、可靠的无人机智能故障&#10;检测系统，能够自主检测故障，并采取相应&#10;干预措施，避免可能产生的事故。&#10;​       本无人机智慧故障检测系统适用于航空&#10;领域，可以用于各种功能的无人机，例如巡&#10;逻、搜索、救援无人机，以及军事、民用等&#10;领域的应用。在航空安全领域，系统能自主&#10;检测检测航空器的异常情况，及时采取措施&#10;防范事故的发生；在民用领域，可以用于搜&#10;索救援、交通管制、环境监测无人机等。因&#10;此，本系统的应用领域非常广泛，可以满足&#10;不同领域的需求，为社会的发展和安全做出&#10;贡献。&#10;主要技术特点:&#10;（1）本系统基于NanoEdge AI Studio，利&#10;用STM32H563和六轴陀螺仪惯性测量单元，&#10;实现了无人机的自主故障检测功能。 &#10;（2）集成STM32WBA52蓝牙模组和无线通&#10;信模组，实现手机与遥控器、无人机与遥控&#10;器的信息传输。&#10;（3）应用TouchGFX与STM32F7设计遥控&#10;器的GUI页面，交互丰富，动画流畅，使操&#10;作员可以简洁明了的掌握无人机的飞行状&#10;态。&#10;（4）基于STM32H743设计四旋翼无人机&#10;飞控，应用了意法半导体的VL53L0X TOF传&#10;感器，为无人机感知环境提供了ST方案。&#10;​       本系统实现了天空端自主故障检测，云&#10;端信息上传，遥控端信息回传，组成一套无&#10;人机智慧故障检测系统。</Translation>
+      </Text>
+      <Text Id="__SingleUse_U4E7" Alignment="Center" TypographyId="SY40">
+        <Translation Language="GB">关于  About</Translation>
+      </Text>
+      <Text Id="__SingleUse_UV2T" Alignment="Center" TypographyId="SY18">
+        <Translation Language="GB">第六届嵌入式竞赛&#10;参赛作品</Translation>
+      </Text>
+      <Text Id="__SingleUse_N86C" Alignment="Left" TypographyId="SY16">
+        <Translation Language="GB">Designed by</Translation>
+      </Text>
+      <Text Id="__SingleUse_RJO1" Alignment="Center" TypographyId="SY20">
+        <Translation Language="GB">&#10;&#10;关 于</Translation>
+      </Text>
+      <Text Id="__SingleUse_BTWS" Alignment="Center" TypographyId="SY20">
+        <Translation Language="GB">&#10;&#10;电 池</Translation>
+      </Text>
+      <Text Id="__SingleUse_HY2O" Alignment="Center" TypographyId="SY18">
+        <Translation Language="GB">刷 新</Translation>
+      </Text>
+      <Text Id="__SingleUse_I6WS" Alignment="Center" TypographyId="SY20">
+        <Translation Language="GB">&#10;&#10;主 页</Translation>
+      </Text>
+      <Text Id="__SingleUse_XWVE" Alignment="Center" TypographyId="SY20">
+        <Translation Language="GB">&#10;&#10;开 始</Translation>
+      </Text>
+      <Text Id="__SingleUse_I1KO" Alignment="Left" TypographyId="SY18">
+        <Translation Language="GB">已连接</Translation>
+      </Text>
+      <Text Id="__SingleUse_P5ZP" Alignment="Left" TypographyId="SY18">
+        <Translation Language="GB">-41dBm</Translation>
+      </Text>
+      <Text Id="__SingleUse_60YG" Alignment="Left" TypographyId="SY20">
+        <Translation Language="GB">状态</Translation>
+      </Text>
+      <Text Id="__SingleUse_BS2W" Alignment="Left" TypographyId="SY20">
+        <Translation Language="GB">信号强度</Translation>
+      </Text>
+      <Text Id="__SingleUse_JEQJ" Alignment="Left" TypographyId="SY28">
+        <Translation Language="GB">一飞冲天队's Drone</Translation>
+      </Text>
+      <Text Id="__SingleUse_NU2D" Alignment="Center" TypographyId="SY18">
+        <Translation Language="GB">断 开</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="SIMYOU.TTF" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
-    <Typography Id="Typography_01" Font="SIMYOU.TTF" Size="40" Bpp="8" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="SY16" Font="SourceHanSansSC-Bold.ttf" Size="16" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacters="∞" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY18" Font="SourceHanSansSC-Bold.ttf" Size="18" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY20" Font="SourceHanSansSC-Bold.ttf" Size="20" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY24" Font="SourceHanSansSC-Bold.ttf" Size="24" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY28" Font="SourceHanSansSC-Bold.ttf" Size="28" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY32" Font="SourceHanSansSC-Bold.ttf" Size="32" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY36" Font="SourceHanSansSC-Bold.ttf" Size="36" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
+    <Typography Id="SY40" Font="SourceHanSansSC-Bold.ttf" Size="40" Bpp="2" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,a-z,A-Z" />
   </Typographies>
 </TextDatabase>

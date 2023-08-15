@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/speedscreen_screen/speedScreenView.cpp:13:6:virtual void speedScreenView::tearDownScreen()	0	static
+../../TouchGFX/gui/include/gui/speedscreen_screen/speedScreenView.hpp:11:13:speedScreenView::~speedScreenView()	8	static
+../../TouchGFX/gui/include/gui/speedscreen_screen/speedScreenView.hpp:11:13:virtual speedScreenView::~speedScreenView()	8	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/speedscreen_screen/speedScreenView.cpp:3:1:speedScreenView::speedScreenView()	8	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/speedscreen_screen/speedScreenView.cpp:8:6:virtual void speedScreenView::setupScreen()	0	static

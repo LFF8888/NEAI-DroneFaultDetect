@@ -69,58 +69,69 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
- gui/include/gui/start_screen/StartView.hpp \
- generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
+ gui/include/gui/firstscreeen_screen/firstScreeenView.hpp \
+ generated/gui_generated/include/gui_generated/firstscreeen_screen/firstScreeenViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/start_screen/StartPresenter.hpp \
+ gui/include/gui/firstscreeen_screen/firstScreeenPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp \
+ gui/include/gui/lockscreen_screen/lockScreenView.hpp \
+ generated/gui_generated/include/gui_generated/lockscreen_screen/lockScreenViewBase.hpp \
+ gui/include/gui/lockscreen_screen/lockScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ gui/include/gui/mainscreen_screen/mainScreenView.hpp \
+ generated/gui_generated/include/gui_generated/mainscreen_screen/mainScreenViewBase.hpp \
+ gui/include/gui/mainscreen_screen/mainScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- gui/include/gui/main_screen/mainView.hpp \
- generated/gui_generated/include/gui_generated/main_screen/mainViewBase.hpp \
- gui/include/gui/main_screen/mainPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- gui/include/gui/wifi_screen/WiFiView.hpp \
- generated/gui_generated/include/gui_generated/wifi_screen/WiFiViewBase.hpp \
- gui/include/gui/wifi_screen/WiFiPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
- gui/include/gui/battery_screen/BatteryView.hpp \
- generated/gui_generated/include/gui_generated/battery_screen/BatteryViewBase.hpp \
- gui/include/gui/battery_screen/BatteryPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
- gui/include/gui/satelite_screen/SateliteView.hpp \
- generated/gui_generated/include/gui_generated/satelite_screen/SateliteViewBase.hpp \
- gui/include/gui/satelite_screen/SatelitePresenter.hpp \
- gui/include/gui/control_screen/ControlView.hpp \
- generated/gui_generated/include/gui_generated/control_screen/ControlViewBase.hpp \
- gui/include/gui/control_screen/ControlPresenter.hpp \
- gui/include/gui/map_screen/MapView.hpp \
- generated/gui_generated/include/gui_generated/map_screen/MapViewBase.hpp \
- gui/include/gui/map_screen/MapPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ gui/include/gui/startscreen_screen/startScreenView.hpp \
+ generated/gui_generated/include/gui_generated/startscreen_screen/startScreenViewBase.hpp \
+ gui/include/gui/startscreen_screen/startScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ gui/include/gui/batscreen_screen/batScreenView.hpp \
+ generated/gui_generated/include/gui_generated/batscreen_screen/batScreenViewBase.hpp \
+ gui/include/gui/batscreen_screen/batScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
+ gui/include/gui/aboutscreen_screen/aboutScreenView.hpp \
+ generated/gui_generated/include/gui_generated/aboutscreen_screen/aboutScreenViewBase.hpp \
+ gui/include/gui/aboutscreen_screen/aboutScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Slider.hpp \
+ generated/simulator/include/simulator/video/DirectFrameBufferVideoController.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp \
+ generated/simulator/include/simulator/video/MJPEGDecoder.hpp \
+ generated/simulator/include/simulator/video/SoftwareMJPEGDecoder.hpp \
+ generated/videos/include/videos/VideoDatabase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
@@ -266,93 +277,57 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
-gui/include/gui/start_screen/StartView.hpp:
+gui/include/gui/firstscreeen_screen/firstScreeenView.hpp:
 
-generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
+generated/gui_generated/include/gui_generated/firstscreeen_screen/firstScreeenViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/start_screen/StartPresenter.hpp:
+gui/include/gui/firstscreeen_screen/firstScreeenPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/FadeAnimator.hpp:
+
+gui/include/gui/lockscreen_screen/lockScreenView.hpp:
+
+generated/gui_generated/include/gui_generated/lockscreen_screen/lockScreenViewBase.hpp:
+
+gui/include/gui/lockscreen_screen/lockScreenPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+
+gui/include/gui/mainscreen_screen/mainScreenView.hpp:
+
+generated/gui_generated/include/gui_generated/mainscreen_screen/mainScreenViewBase.hpp:
+
+gui/include/gui/mainscreen_screen/mainScreenPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
-gui/include/gui/main_screen/mainView.hpp:
+gui/include/gui/startscreen_screen/startScreenView.hpp:
 
-generated/gui_generated/include/gui_generated/main_screen/mainViewBase.hpp:
+generated/gui_generated/include/gui_generated/startscreen_screen/startScreenViewBase.hpp:
 
-gui/include/gui/main_screen/mainPresenter.hpp:
+gui/include/gui/startscreen_screen/startScreenPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-gui/include/gui/wifi_screen/WiFiView.hpp:
-
-generated/gui_generated/include/gui_generated/wifi_screen/WiFiViewBase.hpp:
-
-gui/include/gui/wifi_screen/WiFiPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
-
-gui/include/gui/battery_screen/BatteryView.hpp:
-
-generated/gui_generated/include/gui_generated/battery_screen/BatteryViewBase.hpp:
-
-gui/include/gui/battery_screen/BatteryPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
-
-gui/include/gui/satelite_screen/SateliteView.hpp:
-
-generated/gui_generated/include/gui_generated/satelite_screen/SateliteViewBase.hpp:
-
-gui/include/gui/satelite_screen/SatelitePresenter.hpp:
-
-gui/include/gui/control_screen/ControlView.hpp:
-
-generated/gui_generated/include/gui_generated/control_screen/ControlViewBase.hpp:
-
-gui/include/gui/control_screen/ControlPresenter.hpp:
-
-gui/include/gui/map_screen/MapView.hpp:
-
-generated/gui_generated/include/gui_generated/map_screen/MapViewBase.hpp:
-
-gui/include/gui/map_screen/MapPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
 
@@ -364,11 +339,69 @@ gui/include/gui/map_screen/MapPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+gui/include/gui/batscreen_screen/batScreenView.hpp:
+
+generated/gui_generated/include/gui_generated/batscreen_screen/batScreenViewBase.hpp:
+
+gui/include/gui/batscreen_screen/batScreenPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
+
+gui/include/gui/aboutscreen_screen/aboutScreenView.hpp:
+
+generated/gui_generated/include/gui_generated/aboutscreen_screen/aboutScreenViewBase.hpp:
+
+gui/include/gui/aboutscreen_screen/aboutScreenPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Slider.hpp:
+
+generated/simulator/include/simulator/video/DirectFrameBufferVideoController.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/VideoWidget.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VideoController.hpp:
+
+generated/simulator/include/simulator/video/MJPEGDecoder.hpp:
+
+generated/simulator/include/simulator/video/SoftwareMJPEGDecoder.hpp:
+
+generated/videos/include/videos/VideoDatabase.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp:
 

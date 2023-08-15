@@ -1,5 +1,5 @@
 Middlewares/LibJPEG/jccolor.o: \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/LibJPEG/source/jccolor.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/LibJPEG/source/jccolor.c \
  ../../Middlewares/Third_Party/LibJPEG/include/jinclude.h \
  ../../LIBJPEG/Target/jconfig.h ../../LIBJPEG/Target/jdata_conf.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \

@@ -1,0 +1,5 @@
+../Core/Src/main.c:79:5:main	64	static
+../Core/Src/main.c:183:6:SystemClock_Config	120	static
+../Core/Src/main.c:229:6:fill_input_user_buffer	24	static
+../Core/Src/main.c:241:6:print_input_user_buffer	16	static
+../Core/Src/main.c:254:6:Error_Handler	4	static,ignoring_inline_asm

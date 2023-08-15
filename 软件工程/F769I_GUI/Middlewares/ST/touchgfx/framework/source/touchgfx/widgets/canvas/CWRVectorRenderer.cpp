@@ -2,7 +2,7 @@
 * Copyright (c) 2018(-2023) STMicroelectronics.
 * All rights reserved.
 *
-* This file is part of the TouchGFX 4.21.4 distribution.
+* This file is part of the TouchGFX 4.22.0 distribution.
 *
 * This software is licensed under terms that can be found in the LICENSE file in
 * the root directory of this software component.
@@ -446,14 +446,6 @@ void CWRVectorRenderer::setLinearGradient(float x0, float y0, float x1, float y1
     proxyWidget.setPainter(linearPainter);
 }
 
-void CWRVectorRenderer::setRadialGradient(float /* cx */, float /* cy */, float /* radius */,
-                                          uint32_t /* stops */,
-                                          const float* /* stopPositions */,
-                                          const colortype* /* stopColors */)
-{
-    assert(!"CWRVectorRenderer does not support radial gradient!");
-}
-
 void CWRVectorRenderer::setTransformationMatrix(const Matrix3x3& m)
 {
     matrix = m;
@@ -469,8 +461,8 @@ void CWRVectorRenderer::StrokeCanvas::strokeMoveTo(float x, float y)
 
 void CWRVectorRenderer::StrokeCanvas::strokeLineTo(float x, float y)
 {
-    float dx = x - lastX;
-    float dy = y - lastY;
+    const float dx = x - lastX;
+    const float dy = y - lastY;
     float len = sqrtf(dx * dx + dy * dy);
     if (len > 0.0f)
     {

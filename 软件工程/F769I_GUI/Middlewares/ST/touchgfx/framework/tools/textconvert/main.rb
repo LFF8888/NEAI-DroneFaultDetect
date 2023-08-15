@@ -1,7 +1,7 @@
 # Copyright (c) 2018(-2023) STMicroelectronics.
 # All rights reserved.
 #
-# This file is part of the TouchGFX 4.21.4 distribution.
+# This file is part of the TouchGFX 4.22.0 distribution.
 #
 # This software is licensed under terms that can be found in the LICENSE file in
 # the root directory of this software component.
@@ -94,6 +94,8 @@ UPGRADE
 
     generate_font_format = "0" # 0 = normal font format, 1 = unmapped_flash_font_format
 
+    korean_fusion_fonts = []
+
     require 'json'
 
     application_config = File.join($calling_path, "application.config")
@@ -150,6 +152,11 @@ UPGRADE
         else
           puts "Font format #{font_format} not correct, using default: \"0\""
         end
+      end
+
+      fusion_fonts = text_conf["korean_fusion_fonts"]
+      if fusion_fonts
+        korean_fusion_fonts = fusion_fonts
       end
     end
 
@@ -215,7 +222,8 @@ UPGRADE
                       :binary_translations => generate_binary_translations,
                       :binary_fonts => generate_binary_fonts,
                       :font_format => generate_font_format,
-                      :framebuffer_bpp => framebuffer_bpp }.to_json
+                      :framebuffer_bpp => framebuffer_bpp,
+                      :fusion_fonts => fusion_fonts }.to_json
 
       if (options != new_options)
         force_run = true
@@ -246,7 +254,7 @@ UPGRADE
       require 'lib/emitters/fonts_cpp'
       require 'lib/generator'
       FontsCpp.font_convert = font_convert_path
-      Generator.new.run(file_name, @fonts_output_path, @localization_output_path, font_asset_path, data_format, remap_global, autohint_setting, generate_binary_translations, generate_binary_fonts, framebuffer_bpp, generate_font_format)
+      Generator.new.run(file_name, @fonts_output_path, @localization_output_path, font_asset_path, data_format, remap_global, autohint_setting, generate_binary_translations, generate_binary_fonts, framebuffer_bpp, generate_font_format, korean_fusion_fonts)
       #touch the cache compile time that we rely on in the makefile
       FileUtils.touch "#{@localization_output_path}/cache/compile_time.cache"
 

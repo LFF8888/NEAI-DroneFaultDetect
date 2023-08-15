@@ -5,18 +5,24 @@
 #include <fonts/GeneratedFont.hpp>
 #include <texts/TypedTextDatabase.hpp>
 
-extern touchgfx::GeneratedFont& getFont_SIMYOU_TTF_20_4bpp();
-extern touchgfx::GeneratedFont& getFont_verdana_40_4bpp();
-extern touchgfx::GeneratedFont& getFont_verdana_10_4bpp();
-extern touchgfx::GeneratedFont& getFont_verdana_20_4bpp();
-extern touchgfx::GeneratedFont& getFont_SIMYOU_TTF_40_8bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_16_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_18_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_20_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_24_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_28_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_32_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_36_2bpp();
+extern touchgfx::GeneratedFont& getFont_SourceHanSansSC_Bold_40_2bpp();
 
 const touchgfx::Font* touchgfx_fonts[] = {
-    &(getFont_SIMYOU_TTF_20_4bpp()),
-    &(getFont_verdana_40_4bpp()),
-    &(getFont_verdana_10_4bpp()),
-    &(getFont_verdana_20_4bpp()),
-    &(getFont_SIMYOU_TTF_40_8bpp())
+    &(getFont_SourceHanSansSC_Bold_16_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_18_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_20_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_24_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_28_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_32_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_36_2bpp()),
+    &(getFont_SourceHanSansSC_Bold_40_2bpp())
 };
 
 extern const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[];
@@ -24,26 +30,43 @@ extern const touchgfx::TypedText::TypedTextData* const typedTextDatabaseArray[];
 
 TEXT_LOCATION_FLASH_PRAGMA
 const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 3, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 3, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 7, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 5, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR }
+    { 7, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 3, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 7, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 1, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR }
 };
 
 TEXT_LOCATION_FLASH_PRAGMA
@@ -80,19 +103,28 @@ void resetFont(touchgfx::FontId fontId)
     switch (fontId)
     {
     case 0:
-        touchgfx_fonts[0] = &(getFont_SIMYOU_TTF_20_4bpp());
+        touchgfx_fonts[0] = &(getFont_SourceHanSansSC_Bold_16_2bpp());
         break;
     case 1:
-        touchgfx_fonts[1] = &(getFont_verdana_40_4bpp());
+        touchgfx_fonts[1] = &(getFont_SourceHanSansSC_Bold_18_2bpp());
         break;
     case 2:
-        touchgfx_fonts[2] = &(getFont_verdana_10_4bpp());
+        touchgfx_fonts[2] = &(getFont_SourceHanSansSC_Bold_20_2bpp());
         break;
     case 3:
-        touchgfx_fonts[3] = &(getFont_verdana_20_4bpp());
+        touchgfx_fonts[3] = &(getFont_SourceHanSansSC_Bold_24_2bpp());
         break;
     case 4:
-        touchgfx_fonts[4] = &(getFont_SIMYOU_TTF_40_8bpp());
+        touchgfx_fonts[4] = &(getFont_SourceHanSansSC_Bold_28_2bpp());
+        break;
+    case 5:
+        touchgfx_fonts[5] = &(getFont_SourceHanSansSC_Bold_32_2bpp());
+        break;
+    case 6:
+        touchgfx_fonts[6] = &(getFont_SourceHanSansSC_Bold_36_2bpp());
+        break;
+    case 7:
+        touchgfx_fonts[7] = &(getFont_SourceHanSansSC_Bold_40_2bpp());
         break;
     }
 }

@@ -17,59 +17,53 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoStartScreenNoTransition();
+        gotofirstScreeenScreenNoTransition();
     }
 
-    // Start
-    void gotoStartScreenNoTransition();
+    // firstScreeen
+    void gotofirstScreeenScreenNoTransition();
 
-    // main
-    void gotomainScreenCoverTransitionNorth();
+    // lockScreen
+    void gotolockScreenScreenNoTransition();
 
-    void gotomainScreenCoverTransitionWest();
+    // mainScreen
+    void gotomainScreenScreenNoTransition();
 
-    // WiFi
-    void gotoWiFiScreenCoverTransitionEast();
+    void gotomainScreenScreenCoverTransitionWest();
 
-    // Battery
-    void gotoBatteryScreenCoverTransitionEast();
+    // startScreen
+    void gotostartScreenScreenCoverTransitionEast();
 
-    // Satelite
-    void gotoSateliteScreenCoverTransitionEast();
+    // batScreen
+    void gotobatScreenScreenCoverTransitionEast();
 
-    // Control
-    void gotoControlScreenCoverTransitionEast();
-
-    // Map
-    void gotoMapScreenCoverTransitionEast();
+    // aboutScreen
+    void gotoaboutScreenScreenCoverTransitionEast();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Start
-    void gotoStartScreenNoTransitionImpl();
+    // firstScreeen
+    void gotofirstScreeenScreenNoTransitionImpl();
 
-    // main
-    void gotomainScreenCoverTransitionNorthImpl();
+    // lockScreen
+    void gotolockScreenScreenNoTransitionImpl();
 
-    void gotomainScreenCoverTransitionWestImpl();
+    // mainScreen
+    void gotomainScreenScreenNoTransitionImpl();
 
-    // WiFi
-    void gotoWiFiScreenCoverTransitionEastImpl();
+    void gotomainScreenScreenCoverTransitionWestImpl();
 
-    // Battery
-    void gotoBatteryScreenCoverTransitionEastImpl();
+    // startScreen
+    void gotostartScreenScreenCoverTransitionEastImpl();
 
-    // Satelite
-    void gotoSateliteScreenCoverTransitionEastImpl();
+    // batScreen
+    void gotobatScreenScreenCoverTransitionEastImpl();
 
-    // Control
-    void gotoControlScreenCoverTransitionEastImpl();
-
-    // Map
-    void gotoMapScreenCoverTransitionEastImpl();
+    // aboutScreen
+    void gotoaboutScreenScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

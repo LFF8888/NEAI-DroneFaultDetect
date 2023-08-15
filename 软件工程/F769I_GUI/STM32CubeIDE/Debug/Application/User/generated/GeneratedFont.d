@@ -1,5 +1,5 @@
 Application/User/generated/GeneratedFont.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/generated/fonts/src/GeneratedFont.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/generated/fonts/src/GeneratedFont.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/ConstFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

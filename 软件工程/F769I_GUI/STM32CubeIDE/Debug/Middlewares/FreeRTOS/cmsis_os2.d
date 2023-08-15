@@ -1,6 +1,6 @@
 Middlewares/FreeRTOS/cmsis_os2.o: \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
- D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
+ D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -17,7 +17,7 @@ Middlewares/FreeRTOS/cmsis_os2.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-D:/PersonalData/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+D:/PersonalData/Prj/STM32Prj/F769I/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:

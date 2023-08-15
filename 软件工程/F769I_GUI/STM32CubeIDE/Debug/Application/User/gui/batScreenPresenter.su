@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/batscreen_screen/batScreenPresenter.hpp:28:13:batScreenPresenter::~batScreenPresenter()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/batscreen_screen/batScreenPresenter.cpp:10:6:virtual void batScreenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/batscreen_screen/batScreenPresenter.hpp:28:13:virtual batScreenPresenter::~batScreenPresenter()	8	static
+../../TouchGFX/gui/include/gui/batscreen_screen/batScreenPresenter.hpp:28:13:virtual void* batScreenPresenter::_ZThn4_N18batScreenPresenterD1Ev()	0	static
+D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/gui/src/batscreen_screen/batScreenPresenter.cpp:4:1:batScreenPresenter::batScreenPresenter(batScreenView&)	8	static

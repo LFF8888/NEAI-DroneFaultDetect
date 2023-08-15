@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/TouchGFXGPIO.o: \
- D:/PersonalData/STM32Prj/F769I/TouchGFX/target/TouchGFXGPIO.cpp \
+ D:/PersonalData/Prj/STM32Prj/F769I/TouchGFX/target/TouchGFXGPIO.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  ../../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f769xx.h \
@@ -38,6 +38,8 @@ Application/User/TouchGFX/target/TouchGFXGPIO.o: \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
+ ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
+ ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h \
  ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_jpeg.h \
  ../../Core/Inc/main.h
@@ -79,6 +81,8 @@ Application/User/TouchGFX/target/TouchGFXGPIO.o: \
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
+../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
+../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h:
 ../../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_jpeg.h:
 ../../Core/Inc/main.h:
